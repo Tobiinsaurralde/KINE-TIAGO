@@ -1,0 +1,289 @@
+.navBar {
+    width: 100%;
+    padding: 0 70px 0 70px;
+    box-sizing: border-box;
+    height: 75px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 400;
+  
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    backdrop-filter: blur(1.5px);
+  }
+  .mode{
+    margin-top: 3.5px;
+    }
+  .divLogo {
+    height: 40px;
+  }
+  
+  .logo {
+    height: 40px;
+  }
+  
+  .navBarUl {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 33px;
+    list-style: none;
+  }
+  
+  .navBarUl li {
+    cursor: pointer;
+  }
+  
+  .navBarUl li:hover {
+    color: #515656;
+    transition: 50ms ease;
+  }
+  
+  .navBarUl a:hover {
+    color: #464948;
+    transition: 50ms ease;
+  }
+  
+  .mode {
+    font-size: 17px;
+  }
+  
+  .mobileMenuButton {
+    display: none;
+  }
+  .sidebar {
+    display: none;
+  }
+  
+  /* Estilos para pantalla de 27" */
+  @media screen and (max-width: 2700px) {
+    .navBar {
+      padding: 0 80px 0 80px;
+      height: 80px;
+    }
+  
+    .divLogo,
+    .logo {
+      height: 45px;
+    }
+  
+    .navBarUl {
+      gap: 36px;
+    }
+  
+    .mode {
+      font-size: 18px;
+    }
+  }
+  
+  /* Estilos para pantalla de 23" */
+  @media screen and (max-width: 2300px) {
+    .navBar {
+      padding: 0 70px 0 70px;
+      height: 75px;
+    }
+  
+    .divLogo,
+    .logo {
+      height: 40px;
+    }
+  
+    .navBarUl {
+      gap: 33px;
+    }
+  
+    .mode {
+      font-size: 17px;
+    }
+  }
+  
+  /* Estilos para pantalla de 19" */
+  @media screen and (max-width: 1900px) {
+    .navBar {
+      padding: 0 60px 0 60px;
+      height: 70px;
+    }
+  
+    .divLogo,
+    .logo {
+      height: 35px;
+    }
+  
+    .navBarUl {
+      gap: 30px;
+    }
+  
+    .mode {
+      font-size: 16px;
+    }
+  }
+  
+  /* Estilos para pantalla de 15" */
+  @media screen and (max-width: 1500px) {
+    .navBar {
+      padding: 0 50px 0 50px;
+      height: 65px;
+    }
+  
+    .divLogo,
+    .logo {
+      height: 30px;
+    }
+  
+    .navBarUl {
+      gap: 27px;
+    }
+  
+    .mode {
+      font-size: 15px;
+    }
+  }
+  
+  /* Estilos para pantalla de 13" */
+  @media screen and (max-width: 1300px) {
+    .navBar {
+      padding: 0 40px 0 40px;
+      height: 60px;
+    }
+  
+    .divLogo,
+    .logo {
+      height:150px;
+    }
+  
+    .navBarUl {
+      gap: 24px;
+    }
+  
+    .mode {
+      font-size: 14px;
+    }
+  }
+  
+  /* Estilos para dispositivos móviles */
+  @media screen and (max-width: 600px) {
+    .navBar {
+      padding: 0 20px 0 20px;
+      height: 55px;
+    }
+    .desktopli {
+      display: none;
+    }
+    .mobileMenuButton {
+      display: block;
+      display: flex;
+      align-items: center;
+    }
+    .divLogo,
+    .logo {
+      height: 25px;
+    }
+  
+    .navBarUl {
+      gap: 20px;
+    }
+  
+    .mode {
+      font-size: 13px;
+    }
+  
+    .navBar {
+      flex-direction: row-reverse;
+      height: 75px;
+    }
+    .navBar {
+      padding: 0 30px 0;
+    }
+    .navBarUl {
+      padding: 0;
+      font-size: 30px;
+    }
+  
+    .sidebar {
+      display: flex;
+      padding: 0px 30px;
+  
+      height: 100vh;
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 100;
+      background-color: rgb(0, 0, 0);
+      backdrop-filter: blur(65px);
+      display: flex;
+      box-sizing: border-box;
+      background-color: #000000;
+      background-image: radial-gradient(
+        ellipse at 50% -20%,
+        rgba(80, 79, 149, 0.3),
+        rgba(255, 255, 255, 0)
+      );
+      background-size: cover;
+      background-attachment: fixed;
+      flex-direction: column;
+    }
+  
+    .header {
+      height: 75px;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      align-items: center;
+  
+      border-bottom: 1px solid rgba(255, 255, 255, 0.172);
+    }
+  
+    .closeButton {
+      background-color: transparent;
+      border: none;
+      color: white;
+      font-size: 30px;
+      text-align: center;
+      display: flex;
+      cursor: pointer;
+      &:hover {
+        color: #facc15;
+      }
+    }
+  
+    .sidebarUl ul {
+      list-style-type: none;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      margin-top: 40px;
+      padding: 0;
+      font-size: 18px;
+    }
+  
+    .sidebarUl a {
+      cursor: pointer;
+      color: rgb(255, 255, 255);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 400;
+      font-size: 18px;
+    }
+  
+    .bottomAside {
+      width: 100%;
+      padding: 0;
+      font-size: 12px;
+      color: rgba(250, 250, 250, 0.215);
+      bottom: 0;
+      height: 50%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      flex-direction: column;
+    }
+    
+  }

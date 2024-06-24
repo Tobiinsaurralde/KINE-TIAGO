@@ -1,0 +1,229 @@
+.education {
+    background-color: transparent;
+    height: 100vh;
+    padding: 0 75px 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+  }
+  
+  .father {
+    width: 80%;
+    position: relative;
+  }
+  
+  .subtitle {
+    display: flex;
+    justify-content: start;
+    width: 100%;
+    margin-bottom: 50px;
+    gap: 10px;
+  }
+  .subtitle h2 {
+    font-weight: 400;
+    margin: 0;
+    font-size: 40px;
+  }
+  
+  .contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    gap: 70px;
+    padding-left: 20px;
+  }
+  
+  .study {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 10px;
+  }
+  
+  .linkArrow {
+    position: absolute;
+    bottom: 130px;
+  }
+  .Arrow {
+    position: absolute;
+    font-size: 40px;
+    color: rgb(240, 240, 240);
+    cursor: pointer;
+  }
+  
+  .contenedor {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .study {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .study h3 {
+    margin: 0;
+    position: relative;
+    font-size: 18px;
+    color: #1580fa;
+  }
+  
+  .study h4 {
+    margin: 0;
+    font-size: 16px;
+  }
+  
+  .study p {
+    margin: 0;
+  }
+  
+  .containerTitle p {
+    font-size: 14px;
+    color: #717171;
+  }
+  
+  .study h3::before {
+    content: "";
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    background-color: #154afa;
+    -webkit-box-shadow: 0px 0px 3px 0px rgb(214, 235, 112);
+    -moz-box-shadow: 0px 0px 3px 0px rgb(214, 235, 112);
+    box-shadow: 0px 0px 3px 0px rgb(214, 235, 112);
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  .study:not(:last-child) h3::after {
+    content: "";
+    position: absolute;
+    left: -16px;
+    top: -20px;
+    height: 350px;
+    width: 2px;
+    background-color: rgba(255, 255, 255, 0.137);
+  }
+  
+  .description {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .description p {
+    font-size: 16px;
+  }
+  
+  .description span {
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 14px;
+    color: #407fdf;
+    width: auto;
+  }
+  .containerTitle {
+    width: 500px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .leanMore {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 110px;
+    transition: ease 200ms transform;
+  }
+  
+  .more {
+    font-family: "Onest", sans-serif;
+    color: #facc15;
+    font-size: 18px !important;
+    font-weight: 500;
+    width: 100%;
+    transition: ease 200ms color;
+  }
+  
+  .arrowdown {
+    position: absolute;
+    left: 70%;
+    opacity: 0;
+    color: #407fdf;
+    transition: ease 200ms transform, ease 200ms opacity;
+  }
+  
+  .leanMore:hover .arrowdown {
+    opacity: 1;
+    transform: translateX(30px);
+    color: #0e51b6;
+  }
+  
+  .leanMore:hover .more {
+    color: #0e51b6;
+  }
+  
+  .descriptionSpan {
+    font-size: 16px !important;
+    color: rgb(212, 208, 149) !important;
+    padding-left: 0px;
+  }
+  .iconGeneral {
+    color: white;
+    width: 40px;
+  }
+  
+  .studyBoy {
+    position: absolute;
+    position: absolute;
+    bottom: -130px;
+    right: 0;
+    height: 150px;
+  }
+  @media screen and (max-width: 767px) {
+    .education {
+      padding: 0 30px 0;
+    }
+  
+    .father {
+      width: 100%;
+    }
+  
+    .contenedor {
+      padding: 0;
+      align-items: end;
+    }
+  
+    .study {
+      flex-direction: column;
+      width: 95%;
+      justify-content: end;
+    }
+    .containerTitle {
+      width: 100%;
+    }
+  
+    .study:not(:last-child) h3::after {
+      left: -15px;
+      height: 680px;
+    }
+    .study h3::before {
+      left: -19px;
+    }
+  
+    .description {
+      width: 100%;
+    }
+  
+    .studyBoy {
+      display: none;
+    }
+  }

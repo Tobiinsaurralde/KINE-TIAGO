@@ -2,22 +2,30 @@
     width: 100%;
     padding: 0 70px 0 70px;
     box-sizing: border-box;
-    height: 75px;
-    background-color: transparent;
+    height: 100px;
+    /*background-color: transparent;*/
+    background-color: #2d2d2d;
     display: flex;
     align-items: center;
     justify-content: space-between;
     font-size: 16px;
-    font-weight: 400;
-  
-    position: fixed;
+font-family:Arial;
+    font-weight:20;
     top: 0;
     width: 100%;
-    z-index: 100;
+    position:fixed;
+    z-index: 200;
     backdrop-filter: blur(1.5px);
+  }
+  .desktopli {
+    color: #ffffff;
+    height: 100%;
+    margin-left: 18px;
+
   }
   .mode{
     margin-top: 3.5px;
+    color: #ffffff;
     }
   .divLogo {
     height: 40px;
@@ -40,12 +48,12 @@
   }
   
   .navBarUl li:hover {
-    color: #515656;
+    color: #08376d;
     transition: 50ms ease;
   }
   
   .navBarUl a:hover {
-    color: #464948;
+    color: #0a1c5d;
     transition: 50ms ease;
   }
   
@@ -148,12 +156,14 @@
   @media screen and (max-width: 1300px) {
     .navBar {
       padding: 0 40px 0 40px;
-      height: 60px;
+      height: 70px;
+      padding-right: 40px;
     }
   
     .divLogo,
     .logo {
-      height:150px;
+      height:48px;
+      border-radius: 18px;
     }
   
     .navBarUl {
@@ -181,7 +191,7 @@
     }
     .divLogo,
     .logo {
-      height: 25px;
+      height: 30px;
     }
   
     .navBarUl {
@@ -189,7 +199,8 @@
     }
   
     .mode {
-      font-size: 13px;
+      font-size: 19px;
+      
     }
   
     .navBar {
@@ -214,15 +225,15 @@
       top: 0;
       left: 0;
       z-index: 100;
-      background-color: rgb(0, 0, 0);
+      background-color: rgb(57, 55, 55);
       backdrop-filter: blur(65px);
       display: flex;
       box-sizing: border-box;
-      background-color: #000000;
+      background-color: #303030;
       background-image: radial-gradient(
         ellipse at 50% -20%,
-        rgba(80, 79, 149, 0.3),
-        rgba(255, 255, 255, 0)
+        rgba(181, 178, 178, 0.3),
+        rgba(0, 0, 0, 0)
       );
       background-size: cover;
       background-attachment: fixed;

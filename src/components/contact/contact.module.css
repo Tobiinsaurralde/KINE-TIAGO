@@ -19,6 +19,7 @@
   justify-content: space-between;
   align-items: flex-start;
   width: 100%;
+  
 }
 .subtitle {
   display: flex;
@@ -35,6 +36,7 @@
 
 .formContact {
   width: 450px;
+  
 }
 .form {
   display: flex;
@@ -45,6 +47,9 @@
   width: 450px;
   outline: none;
   box-sizing: border-box;
+  border-color: black;
+
+  
 }
 
 .form input {
@@ -54,9 +59,15 @@
   box-sizing: border-box;
   font-size: 18px;
   border-radius: 5px;
-  border: none;
+  border-color: black;
   padding: 5px;
-  transition: border 1s ease;
+  scrollbar-width: thin;
+  resize: none;
+  scrollbar-color: #0e51b6;
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+border-width: 1px;
+
 }
 
 .form textarea {
@@ -66,12 +77,14 @@
   box-sizing: border-box;
   font-size: 18px;
   border-radius: 5px;
-  border: none;
+  border-color: black;
   padding: 5px;
   scrollbar-width: thin;
   resize: none;
-  scrollbar-color: #0e51b6;
+  scrollbar-color: #0467fa;
   overflow: hidden;
+  background-color: rgb(255, 255, 255);
+border-width: 1px;
 }
 
 .send {
@@ -83,7 +96,7 @@
     rgba(49, 111, 203, 1) 66%,
     rgba(87, 151, 246, 1) 100%
   );
-  color: white;
+  color: rgb(255, 255, 255);
   font-weight: 500;
   cursor: pointer;
 }
@@ -114,7 +127,6 @@
   font-weight: 200;
   margin: 0;
   cursor: pointer;
-  color: rgb(0, 0, 0);
   text-decoration: none;
 }
 
@@ -184,6 +196,8 @@ body.dark-mode .send {
     rgb(255, 255, 255) 100%
   );
 }
+
+
 
 @media screen and (max-width: 767px) {
   .contact {

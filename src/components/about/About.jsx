@@ -31,27 +31,51 @@ function About() {
         <div className={style.conteinerAbout1}>
           <div className={style.conteinerTitle}>
             <div className={style.titleLiteral}>
-              <p className={style.title}>Hola, soy</p>
-              <h1 className={style.textGradient}>Tiago Insaurralde</h1>
+              <p className={style.title}></p>
+              <h1 className={style.textGradientt}>*Nombre*</h1>
             </div>
             <div className={style.conteinerDescription}>
               <p className={style.description}>
+                {" "}  Datos:
                 {" "}
-                Un{" "}
-                <span className={style.tecnico}>
-                  Licenciado en Kinesiologia y Fisiatría
+                <span className={style.tecnicoo}>
+                  {/*Licenciado en Kinesiologia y Fisiatría*/}
+                    Profesión/cargo, 
                 </span>{" "}
-                de Corrientes, Argentina{" "}
-                <img
+                   Ciudad ,  País, etc... {" "}     
+                  Una breve descripción 
+                {/*<img
                   src={argentina}
                   alt="argentinaFlag"
                   className={style.flag}
-                />
+                />*/}
               </p>
             </div>
           </div>
-
           <div className={style.conteinerIcons}>
+            <a
+              href="https://www.linkedin.com"
+              target="_blank"
+              className={style.iconsRed}
+            >
+              <FaLinkedin className={style.linkedinIcon} />
+            </a>
+            <a
+              href="https://www.instagram.com"
+              target="_blank"
+              className={style.iconsRed}
+            >
+              <div className={style.linkedinIcon}>
+                <img
+                  src={instagram}
+                  alt="instagram"
+                  style={{ width: '23px', height: '23px', marginTop: '6px' }}
+                />
+              </div>
+            </a>
+          </div>
+        </div>
+          {/*<div className={style.conteinerIcons}>
             <a
               href="https://www.linkedin.com/in/tiago-insaurralde-a4b328211/?originalSubdomain=ar"
               target="_blank"
@@ -73,7 +97,7 @@ function About() {
               </div>
             </a>
           </div>
-        </div>
+        </div>*/}
         <div className={style.conteinerAbout2}>
           <img src={fondoPerfil} alt="fondo-perfil" />
         </div>
@@ -87,7 +111,6 @@ function About() {
         exact="true"
         className={style.linkArrow}
       >
-        <RiArrowDownSLine className={style.Arrow} />
       </Link>
     </section>
   );

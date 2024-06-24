@@ -10,25 +10,27 @@ function Education() {
     <section className={style.education} id="education">
       <div className={style.father}>
         <div className={style.subtitle}>
-          <img src={school} alt="schoolicon" className={style.iconGeneral} />
-          <h2>Educación </h2>
+          <h2>Formación y experiencia: </h2>
         </div>
         <div className={style.contenedor}>
           <div className={style.study}>
             <div className={style.containerTitle}>
-              <h3>Licenciado en Kinesiología y Fisiatría</h3>
-              <h4>Universidad Nacional del Nordeste</h4>
+              <h3>Profesión 1</h3>
+              <h4>Donde estudié (Universidad, curso, etc...)</h4>
 
-              <p>2019 - 2023</p>
+              <p>2000 - 2099</p>
             </div>
             <div className={style.description}>
-              <p>
+            <p>
+             *Breve descripción*
+              </p>
+             {/*<p>
               Tengo una sólida formación como Licenciado en Kinesiología y Fisiatría,
                he tenido la oportunidad de ganar experiencia práctica a través de diversas 
                actividades y prácticas pre-profesionales durante mis años de estudio.
               Estas experiencias me han permitido aplicar mis conocimientos teóricos en situaciones reales,
                desarrollando habilidades clave y afianzando mi vocación.
-              </p>
+              </p>*/}
               <div className={style.leanMore}>
                 <RxDoubleArrowRight className={style.arrowdown} />
               </div>
@@ -36,15 +38,23 @@ function Education() {
           </div>
 
           <div className={style.study}>
-            <div className={style.containerTitle}>
+          <div className={style.containerTitle}>
+              <h3>Profesión 2</h3>
+              <h4>Donde estudié (Universidad, curso, etc...)</h4>
+              <p>2000 - 2099</p>
+            </div>
+            {/*<div className={style.containerTitle}>
               <h3>Preparador Físico</h3>
               <h4>Escuela de Formación en Fitness (E.F.F.I.)</h4>
-              <p>2022 - 2023</p>
-            </div>
+              <p>2000 - 2099</p>
+            </div>*/}
             <div className={style.description}>
-              <p>
-                Aporto conocimientos especializados en preparación física y entrenamiento deportivo.
+            <p>
+              *Breve descripción*
               </p>
+              {/*<p>
+                Aporto conocimientos especializados en preparación física y entrenamiento deportivo.
+              </p>*/}
               <div className={style.leanMore}>
                 <RxDoubleArrowRight className={style.arrowdown} />
               </div>

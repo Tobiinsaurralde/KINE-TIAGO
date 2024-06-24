@@ -67,7 +67,6 @@
   }
   .tecnico {
     color: rgb(0, 28, 60);
-    font-weight: bold; /* Esto hace la letra más gruesa */
   }
   
   .conteinerIcons {
@@ -117,13 +116,7 @@
     position: absolute;
     bottom: 80px;
   }
-  .Arrow {
-    position: absolute;
-    font-size: 40px;
-    color: rgb(0, 0, 0);
-    bottom: 10px;
-    cursor: pointer;
-  }
+  
   
   /* //! ////////////////// hover logos ////////////////// */
   
@@ -213,7 +206,7 @@
   
     .conteinerIcons {
       justify-content: space-between;
-      width: 100%;
+     margin-left: 10px;
     }
   
     .conteinerTitle {
@@ -257,8 +250,23 @@
   
   body.dark-mode .tecnico {
     color: rgb(243, 245, 246);
+    
   }
   
   body.dark-mode .resume {
-    color: rgb(252, 254, 253);
+    color: rgb(253, 255, 254);
   }
+  body.dark-mode .textGradient {
+    font-size: 3em;
+    font-weight: bold;
+    background: rgb(0, 1, 4);
+    background: linear-gradient(
+        84deg,
+        rgb(255, 255, 255) 0%,
+        rgb(255, 244, 244) 56%,
+        rgb(255, 255, 255) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 2s infinite alternate;
+}

@@ -38,12 +38,13 @@ function Navbar() {
       </div>
 
       <ul className={style.navBarUl}>
-      <li>
-          <MdOutlineLightMode className={style.mode} onClick={toggleMode} />
-        </li> 
+     
         <li className={style.mobileMenuButton} onClick={toggleSidebar}>
           <TbMenu2 />
         </li>
+        <li>
+          <MdOutlineLightMode className={style.mode} onClick={toggleMode} />
+        </li> 
         <li className={style.desktopli}>
           <Link
             to="about"
@@ -53,7 +54,7 @@ function Navbar() {
             spy={true}
             exact="true"
           >
-            Sobre mí
+            INICIO
           </Link>
         </li>
         <li className={style.desktopli}>
@@ -65,7 +66,7 @@ function Navbar() {
             spy={true}
             exact="true"
           >
-            Educación
+            SOBRE MÍ
           </Link>
         </li>
      
@@ -78,7 +79,7 @@ function Navbar() {
             spy={true}
             exact="true"
           >
-            Contacto
+            CONTACTO
           </Link>
         </li>
       
@@ -88,7 +89,7 @@ function Navbar() {
         <div className={style.sidebar}>
           <div className={style.header}>
             <div className={style.divLogo}>
-              <img src={logo} alt="luciano-moren-logo" className={style.logo} />
+              <img src={logo} alt="-logo" className={style.logo} />
             </div>
             <button className={style.closeButton} onClick={toggleSidebar}>
               <IoClose />
@@ -97,6 +98,20 @@ function Navbar() {
 
           <div className={style.sidebarUl}>
             <ul>
+          {/*  <li>
+                <Link
+                  onClick={toggleSidebar}
+                  to="about"
+                  smooth={true}
+                  duration={500}
+                  offset={-70}
+                  spy={true}
+                  exact="true"
+                >
+                  <img src={aboutMe} alt="aboput" />
+                 Entrenamientos Online
+                </Link>
+              </li>*/}
               <li>
                 <Link
                   onClick={toggleSidebar}
@@ -111,6 +126,7 @@ function Navbar() {
                   Sobre mí
                 </Link>
               </li>
+            
               <li>
                 <Link
                   onClick={toggleSidebar}
@@ -128,20 +144,6 @@ function Navbar() {
               <li>
                 <Link
                   onClick={toggleSidebar}
-                  to="portfolio"
-                  smooth={true}
-                  duration={500}
-                  offset={-70}
-                  spy={true}
-                  exact="true"
-                >
-                  <img src={code} alt="proyectos" />
-                  Asesorias
-                </Link>
-              </li>
-              <li>
-                <Link
-                  onClick={toggleSidebar}
                   to="contact"
                   smooth={true}
                   duration={500}
@@ -153,6 +155,21 @@ function Navbar() {
                   Contacto
                 </Link>
               </li>
+              <li>
+               {/* <Link
+                  onClick={toggleSidebar}
+                  to="portfolio"
+                  smooth={true}
+                  duration={500}
+                  offset={-70}
+                  spy={true}
+                  exact="true"
+                >
+                  <img src={code} alt="proyectos" />
+                  Asesorias
+                </Link>*/}
+              </li>
+            
             </ul>
           </div>
           <div className={style.bottomAside}>

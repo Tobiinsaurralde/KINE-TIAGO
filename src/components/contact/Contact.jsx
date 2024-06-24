@@ -20,7 +20,7 @@ function Contact() {
           Swal.fire({
             icon: "success",
             title: "¡Mensaje enviado con éxito!",
-            text: "Tu mensaje fue enviado correctamente a Tiago.",
+            text: "Tu mensaje fue enviado correctamente a ...",
             confirmButtonColor: "rgb(14, 81, 182)",
             customClass: {
               popup: "black-background",
@@ -42,34 +42,36 @@ function Contact() {
 
   return (
     <section className={style.contact} id="contact">
+      
       <div className={style.father}>
         <div className={style.subtitle}>
-        <img src={user} alt="userIcon" className={style.iconGeneral} />
-          <h2>Contacto</h2>
+          
+          <h2>Contacto:</h2>
         </div>
         <div className={style.contenedor}>
           <div className={style.contactme}>
             <div className={style.contactos}>
-              <a href="mailto:kinetiagoinsa@gmail.com">
+              <a /*href="mailto:kinetiagoinsa@gmail.com"*/>
                 <BiLogoGmail className={style.iconContact} />
-                kinetiagoinsa@gmail.com
+                ejemplo@gmail.com
+                {/*kinetiagoinsa@gmail.com*/}
               </a>
               <a
-                href="https://www.google.com/maps/place/Corrientes/@-27.4860751,-58.8747897,12z/data=!3m1!4b1!4m6!3m5!1s0x94456b79d5bed36b:0xfa999f1ef3b40646!8m2!3d-27.4692131!4d-58.8306349!16zL20vMDJ0Ymo1?entry=ttu"
+               /* href="https://www.google.com/maps/place/Corrientes/@-27.4860751,-58.8747897,12z/data=!3m1!4b1!4m6!3m5!1s0x94456b79d5bed36b:0xfa999f1ef3b40646!8m2!3d-27.4692131!4d-58.8306349!16zL20vMDJ0Ymo1?entry=ttu"*/
                 target="_blank"
                 rel="noopener noreferrer"
               >
                                 <FaLocationDot className={style.iconContact} />
 
-                Argentina, Corrientes
+                Ciudad, País.
               </a>
               <a
-                href="https://www.linkedin.com/in/tiago-insaurralde-a4b328211/?originalSubdomain=ar"
+                /*href="https://www.linkedin.com/in/tiago-insaurralde-a4b328211/?originalSubdomain=ar"*/
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <FaLinkedin className={style.iconContact} />
-                /tiagoinsaurralde
+                /Usuario
               </a>
               <a
               href="https://www.instagram.com/tiago.insaurralde"

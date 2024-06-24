@@ -5,27 +5,23 @@ import Navbar from "./components/navbar/Navbar";
 import Portfolio from "./components/portfolio/Portfolio";
 import Skills from "./components/skills/Skills";
 import Education from "./components/education/Education";
-import { BrowserRouter, Routes, Route, useLocation, useNavigate } from "react-router-dom";
-
 function App() {
   return (
-  <div className="App">
-    <BrowserRouter>
-      <Routes>
-        <Route path="/tiago" element={<Education />} />
-        </Routes>
-        </BrowserRouter>
     <>
       <Navbar />
       <About />
+      <Education />
       <Portfolio />
       {/* <Skills /> */}
       <Contact />
     </>
-   
-  </div>
   );
 
 }
 
 export default App;
+ {/*<BrowserRouter>
+      <Routes>
+        <Route path="/tiago" element={<Education />} />
+        </Routes>
+        </BrowserRouter>*/}

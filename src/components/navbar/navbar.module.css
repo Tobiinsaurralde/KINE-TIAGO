@@ -13,7 +13,6 @@ font-family:Arial;
     font-weight:20;
     top: 0;
     width: 100%;
-    position:fixed;
     z-index: 200;
     backdrop-filter: blur(1.5px);
   }
@@ -205,7 +204,7 @@ font-family:Arial;
   
     .navBar {
       flex-direction: row-reverse;
-      height: 75px;
+      height: 65px;
     }
     .navBar {
       padding: 0 30px 0;

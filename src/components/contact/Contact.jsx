@@ -14,7 +14,7 @@ function Contact() {
     e.preventDefault();
 
     emailjs
-      .sendForm("service_4ciiuve", "template_j2chaoq", form.current, "4w4Ticp4yTyJIQiqR")
+      //.sendForm("service_4ciiuve", "template_j2chaoq", form.current, "4w4Ticp4yTyJIQiqR")
       .then(
         () => {
           Swal.fire({

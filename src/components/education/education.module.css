@@ -1,229 +1,879 @@
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Inhabilita la barra de desplazamiento horizontal */
+  height: 100%;
+
+}
+
+* {
+  box-sizing: border-box; /* Incluye el padding y el borde en el ancho y alto de los elementos */
+}
 .education {
-    background-color: transparent;
-    height: 100vh;
-    padding: 0 75px 0;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    position: relative;
+  padding: 20px;
+}
+
+.father {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -125px;
+  margin-bottom: 230px;
+}
+.subtitle {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+
+  color: #333;
+}
+.subtitle8 h2 {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 1.7rem;
+  font-weight: 500;
+
+  color: #242424;
+}
+.subtitleq {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+margin-top: -100px;
+  color: #252525;
+}
+
+.subtitlee h2{
+  text-align: center;
+  margin: 20px 0;
+  font-size: 1.6rem;
+  font-weight: 300;
+
+  color: #333;
+}
+
+.subtitle h2{
+  text-align: center;
+  margin: 20px 0;
+  font-size: 1.8rem;
+  font-weight: 300;
+
+  color: #333;
+}
+.boldText {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 1.8rem;
+  font-weight: 700;
+
+  color: #333;
   }
+  
+.boldText1 {
+
+font-weight: 700;
+}
+
+
+.tecnico2 {
+  color: rgb(55, 53, 53);
+  font-size: 25px;
+  margin-top: -27px;
+font-weight: 400;
+
+  padding-bottom: 50px;
+}
+.boldTextt{
+  font-size: 25px;
+  color: #141414;
+
+font-weight: 600;
+}
+.cardsContainer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 40px;
+}
+.cardd {
+  width: 28%;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  display: flex;
+  height: 420px;
+  border-radius: 10px;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.1); /* Borde menos marcado */
+  box-shadow: 10px 0 40px rgba(0, 0, 0, 0.2); /* Sombra negra, grande y difuminada */
+  background-color: #fff;
+}
+.card {
+  width: 28.5%;
+  padding: 20px;
+  border-radius: 10px;
+  height: 400px;
+  box-shadow: 10px 0 40px rgba(0, 0, 0, 0.2); /* Sombra negra, grande y difuminada */
+
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+}
+
+
+  .callButton {
+    padding: 8px 16px;
+    background-color: #25D366;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  font-size: 1.2em;
+  font-weight: 600;
+
+  }
+  
+  .callButton:hover {
+    background-color: #186e39;
+    transform: translateY(-3px); /* Efecto de elevación */
+  transform: scale(1.02);
+
+
+  }
+
+  .callButtonn {
+    padding: 8px 16px;
+    background-color: #ce2b2b;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  font-size: 1.2em;
+  font-weight: 600;
+width: 60%;
+  }
+  .callButtonn:hover {
+    background-color: #b22a2a; /* Rojo oscuro */
+    transform: translateY(-3px); /* Efecto de elevación */
+  transform: scale(1.02);
+
+  }
+ 
+.cardLink {
+  width: 90%;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0.1, 0.1, 0.1, 0.1);
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  text-decoration: none; /* Elimina el subrayado de los enlaces */
+  color: inherit; /* Usa el color por defecto del texto */
+  cursor: pointer; /* Cambia el cursor del mouse a pointer para indicar que es interactivo */
+}
+.cardLinkk {
+  width: 90%;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0.1, 0.1, 0.1, 0.1);
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  text-decoration: none; /* Elimina el subrayado de los enlaces */
+  color: inherit; /* Usa el color por defecto del texto */
+  cursor: pointer; /* Cambia el cursor del mouse a pointer para indicar que es interactivo */
+}
+
+.cardImage3 {
+  width: 56px;  /* Ajusta el tamaño según sea necesario */
+  height: 56px; /* Ajusta el tamaño según sea necesario */
+  color: #ce2b2b; /* Color de WhatsApp */
+}
+.cardImage2 {
+  width: 60px;  /* Ajusta el tamaño según sea necesario */
+  height:60px; /* Ajusta el tamaño según sea necesario */
+  color:#25D366; /* Color de WhatsApp */
+}
+
+
+.transparentCard {
+  background-color: transparent;
+  box-shadow: none;
+  transform: translateY(-10px); /* Efecto de elevación al pasar el cursor */
+}
+
+.transparentCardsContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px; /* Espaciado entre las tarjetas */
+  margin: 20px 0;
+}
+.transparentCard .cardTitle {
+  color: #b81b1b;
+  font-weight: 700;
+}
+.highlight {
+  color: red; /* Cambia el color según tu preferencia */
+}
+
+
+.cardImage {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.cardContent {
+  padding: 15px;
+  text-align: center;
+}
+
+.cardTitle {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.cardText {
+  font-size: 1em;
+  color: #101010;
+  font-weight: 400;
+
+  
+}
+
+.arrow {
+  width: 50px;
+  height: auto;
+  margin: 20px 0;
+}
+
+.arrow2 {
+  margin-top: 15px;
+  width: 47px;
+  height: 55px;
+}
+.greyBlock {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 7px;
+  width: 100%;
+  padding: 20px;
+  background-color: #ebebeb;
+}
+.cardIcon {
+  font-size: 5rem; /* Tamaño del ícono */
+  color: #b81b1b; /* Color del ícono */
+  margin-bottom: 6px; /* Espacio debajo del ícono */
+}
+
+.leftBlock {
+  flex: 1;
+  text-align: center;
+}
+
+.leftBlock h2 {
+  margin-bottom: 20px;
+}
+
+
+.fotoPerfil {
+  width: 170px;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 15%;
+}
+
+.rightBlock {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.arrowRight {
+  width: 50px;
+  height: auto;
+  margin: 0 20px;
+}
+
+.twoCardBlock {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.twoCardBlock .card {
+  width: 45%;
+}
+
+ 
+.blackBlock {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw; /* Ocupa todo el ancho de la ventana */
+  padding: 40px 20px;
+  background: #333;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 0; /* Quitar el border-radius para que ocupe todo el ancho */
+  height: 360px; /* Ocupa toda la altura restante */
+  margin-bottom: -250px;
+  
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+
+}
+
+#root {
+  flex: 1;
+}
+
+main {
+  flex: 1;
+}
+
+footer {
+  flex-shrink: 0;
+}
+
+
+.blackBlock .logo {
+  margin-right: 150px;
+  margin-top:-190px;
+  width: 130px;
+  height: 130px;
+}
+
+.services{
+  width: 45%;
+margin-left: 250px;
+
+}
+
+.aboutMe {
+  width: 45%;
+margin-right: 90px;
+
+}
+
+.services h3, .aboutMe h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.services ul, .aboutMe ul {
+  list-style: none;
+  padding: 0;
+}
+
+.services li, .aboutMe li {
+  margin-bottom: 10px;
+}
+
+.services a, .aboutMe a {
+  color: #e47877;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.services a:hover, .aboutMe a:hover {
+  color: #c46665;
+  text-decoration: underline;
+}
+
+.tobi {
+  text-align: center;
+  margin-top: -80px;
+  font-size: 0.875rem;
+  color: #666;
+}
+/* About Section Styles */
+.about {
+  background-color: transparent;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 0 75px 75px;
+  margin-top: 78px;
+  margin-left: -20px;
+}
+
+.divLogo {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.logo {
+  height: 110px;
+  border-radius: 18px;
+  display: block;
+  margin: 0 auto;
+}
+
+.faqContainer {
+  width: 100%;
+  margin: 20px 0;
+}
+
+.faqItem {
+  width: 100%;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 10px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.faqItem:hover {
+  transform: scale(1.02);
+}
+
+.faqQuestion {
+  color: #333;
+  padding: 15px 20px;
+  background-color: #ffffff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.1em;
+  font-weight: bold;
+  border-bottom: 1px solid #ddd;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.faqQuestion::after {
+  content: '▼';
+  font-size: 0.9em;
+  margin-left: 10px;
+  transition: transform 0.3s ease;
+}
+
+
+
+.faqQuestion.open {
+  color: #b81b1b;;
+  background-color: #f2f2f2;
+}
+
+.faqQuestion.open::after {
+  transform: rotate(180deg);
+}
+
+.faqAnswer {
+  padding: 15px 20px;
+  background-color: #fff;
+  border-top: 1px solid #ddd;
+  font-size: 1em;
+  line-height: 1.5;
+  transition: max-height 0.3s ease;
+}
+
+.faqAnswer p {
+  margin: 0;
+}
+
+
+
+.containerAbout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 120px;
+  margin-top: -30px;
+}
+
+.conteinerAbout1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 65px;
+  max-width: 850px;
+  margin-left: -20px;
+}
+
+.titleLiteral {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.textGradientt {
+  font-size: 1em;
+  font-weight: 700;
+  background: linear-gradient(90deg, #2b2b2b, #262626);
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 2s infinite alternate;
+  margin-left: 10px;
+}
+
+
+.nombre {
+  color: #313131;
+  font-size: 1.9em;
+  font-weight: 450;
+  margin-left: 55px;
+}
+
+.descripcion {
+  margin-top: -8px;
+  font-size: 1.3em;
+  max-width: 500px;
+  font-weight: 200;
+  margin-left: 25px;
+}
+.descrip1{
+  font-weight: 600;
+}
+.tecnico {
+  color: rgb(55, 53, 53);
+  margin: 1px 0;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.linearoja {
+  width: 40px;
+  height: auto;
+  margin-top: -15px;
+  margin-left: 22px;
+}
+
+
+
+.flag {
+  width: 20px;
+  border-radius: 2px;
+}
+
+.conteinerAbout2 {
+  display: flex;
+  align-items: center;
+}
+
+.conteinerAbout2 img {
+  height: 350px;
+  border-radius: 50px;
+  margin-right: 20px;
+}
+
+
+
+.arrow {
+  height: 55px;
+  width: 55px;
+  margin-top: 10px;
+
+}
+.socialLink{
+  text-decoration: none; /* Elimina el subrayado de los enlaces */
+  color: inherit; /* Usa el color por defecto del texto */
+  cursor: pointer; 
+}
+/* Media Queries para Dispositivos Móviles */
+@media screen and (max-width: 767px) {
+  .education {
+    margin-top:10px;
+    padding: 15px; /* Reduce el espaciado interno en pantallas pequeñas */
+  }
+  .linearoja {
+    width: 40px;
+    height: auto;
+    margin-top: -15px;
+    margin-left: 22px;
+  }
+  
   
   .father {
-    width: 80%;
-    position: relative;
+
+    margin-top: -100px; /* Ajusta el margen superior para móviles */
+    margin-bottom: 180px; /* Ajusta el margen inferior para móviles */
   }
-  
+
   .subtitle {
+    margin: 10px 0; /* Reduce el margen superior e inferior */
+  }
+
+  .cardsContainer {
+    flex-direction: column; /* Cambia a columna para mejor visualización en móviles */
+    align-items: center; /* Centra los elementos */
     display: flex;
-    justify-content: start;
+    justify-content: space-around;
+    flex-wrap: wrap;
     width: 100%;
-    margin-bottom: 50px;
-    gap: 10px;
   }
-  .subtitle h2 {
-    font-weight: 400;
-    margin: 0;
-    font-size: 40px;
+
+  .cardd, .card {
+    width: 90%; /* Aumenta el ancho en pantallas pequeñas */
+    margin: 10px 0; /* Ajusta el margen alrededor de las tarjetas */
   }
+
   
-  .contenedor {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.cardImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cardContent {
+  text-align: center;
+}
+
+.cardTitle {
+  font-size: 1.3em;
+  margin-top: -5px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.cardText {
+  font-size: 1em;
+  color: #101010;
+
+  
+}
+  .callButton, .callButtonn {
+    font-size: 1em; /* Reduce el tamaño de la fuente para botones */
+    padding: 10px; /* Aumenta el espaciado interno para botones */
+    width: auto; /* Ajusta el ancho de los botones */
+  }
+
+  .transparentCard {
+      flex-direction: column; /* Cambia a columna para móviles */
+      align-items: center; /* Centra los elementos */
+      gap: -205px; /* Reduce el espacio entre las tarjetas */
+      height: 230px;
+    width: 90%; /* Aumenta el ancho en pantallas pequeñas */
+    margin: 10px 0; /* Ajusta el margen alrededor de las tarjetas transparentes */
+  }
+
+  .cardImage {
     width: 100%;
-    gap: 70px;
-    padding-left: 20px;
+    margin-top: -10px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px; /* Bordes redondeados en la imagen */
   }
+
+  .arrow, .arrow2 {
+    width: 40px; /* Reduce el tamaño de los íconos */
+  }
+
+  .greyBlock {
+    flex-direction: column; /* Cambia a columna para móviles */
+    align-items: center; /* Centra los elementos */
+    padding: 15px; /* Reduce el espaciado interno */
+  }
+
+  .cardIcon {
+    font-size: 4rem; /* Reduce el tamaño del ícono */
+  }
+
+  .leftBlock, .rightBlock {
+    width: 100%; /* Ajusta el ancho para móviles */
+    text-align: center; /* Centra el texto */
+  }
+
+  .fotoPerfil {
+    width: 20px; /* Reduce el ancho de la foto de perfil */
+    height: 20px; /* Reduce el alto de la foto de perfil */
+  }
+
+  .arrowRight {
+    width: 40px; /* Reduce el tamaño del ícono de flecha */
+  }
+
+  .twoCardBlock {
+    flex-direction: column; /* Cambia a columna para móviles */
+    align-items: center; /* Centra los elementos */
+  }
+  .subtitlee h2{
+    text-align: center;
+    margin: 20px 0;
+    font-size: 1.2rem;
+    font-weight: 500;
   
-  .study {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    gap: 10px;
+    color: #333;
   }
-  
-  .linkArrow {
-    position: absolute;
-    bottom: 130px;
+  .subtitleq{
+margin-top: 15px;
   }
-  .Arrow {
-    position: absolute;
-    font-size: 40px;
-    color: rgb(240, 240, 240);
-    cursor: pointer;
+  .transparentCardsContainer {
+    flex-direction: column; /* Cambia a columna para móviles */
+    align-items: center; /* Centra los elementos */
+    gap: -52px; /* Reduce el espacio entre las tarjetas */
+}
+
+
+ 
+.blackBlock {
+  background: #333;
+  flex-direction: column;
+  color: #fff;
+  padding: 40px 20px;
+  margin-top: 40px;
+  margin-bottom: -150px;
+  border-radius: 15px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+}
+
+.blackBlock .logo {
+  margin-bottom: 20px;
+  margin-left: -60px;
+}
+.services{
+width: 100%;
+
+margin-bottom: 20px;
+
+
+}
+.aboutMe {
+  width: 100%;
+  text-align: center;
+
+  margin-bottom: 20px;
+}
+
+.services h3, .aboutMe h3 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+
+  font-weight: 600;
+  color: #fafafa; /* Color de los encabezados */
+  border-bottom: 2px solid #fefefe; /* Línea de separación */
+  padding-bottom: 10px; /* Espacio debajo del texto */
+}
+
+.services ul, .aboutMe ul {
+  list-style: none;
+
+  padding: 0;
+}
+.formacionExperiencia {
+  font-size: 1.3rem; /* Tamaño grande del texto */
+  margin-bottom: 15px;
+
+  font-weight: 700;
+  color: #000000;
+}
+
+
+.services li, .aboutMe li {
+  margin-bottom: 10px;
+}
+
+.services a, .aboutMe a {
+  color: #e47877;
+  text-decoration: none;
+  font-size: 1.125rem;
+  text-align: center;
+
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.services a:hover, .aboutMe a:hover {
+  color: #c46665;
+  text-decoration: underline;
+}
+
+.tobi {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.875rem;
+  color: #666;
+  margin-right: -30px;
+}
+  .about {
+    padding: 50px 15px; /* Reduce el espaciado interno */
   }
-  
-  .contenedor {
-    display: flex;
-    justify-content: space-between;
+
+  .containerAbout {
+    flex-direction: column; /* Cambia a columna para móviles */
   }
-  
-  .study {
-    display: flex;
-    margin-bottom: 20px;
+
+  .conteinerAbout1 {
+    width: 100%; /* Ajusta el ancho para móviles */
+    height: auto; /* Ajusta la altura para móviles */
   }
-  
-  .study h3 {
-    margin: 0;
-    position: relative;
-    font-size: 18px;
-    color: #1580fa;
+  .conteinerAbout1 {
+    width: 100%; /* Ajusta el ancho para móviles */
+    height: auto; /* Ajusta la altura para móviles */
+    font-size: 1em;
+    padding: 10px;
+
   }
-  
-  .study h4 {
-    margin: 0;
-    font-size: 16px;
+  .titleLiteral h1 {
+    margin-top: -5px;
+    font-size: 25px; /* Reduce el tamaño de la fuente del título */
   }
-  
-  .study p {
-    margin: 0;
+  .tecnico{
+    font-size: 25px; /* Reduce el tamaño de la fuente del título */
+    font-weight: 500;
   }
-  
-  .containerTitle p {
-    font-size: 14px;
-    color: #717171;
+  .linearoja {
+    width: 22px; /* Reduce el tamaño de la línea roja */
+    height: 40px; /* Ajusta la altura de la línea roja */
+    color: #932121;
   }
-  
-  .study h3::before {
-    content: "";
-    position: absolute;
-    left: -20px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 10px;
-    height: 10px;
-    background-color: #154afa;
-    -webkit-box-shadow: 0px 0px 3px 0px rgb(214, 235, 112);
-    -moz-box-shadow: 0px 0px 3px 0px rgb(214, 235, 112);
-    box-shadow: 0px 0px 3px 0px rgb(214, 235, 112);
-    border-radius: 50%;
-    z-index: 1;
+  .tecnico2{
+    font-size: 25px; /* Reduce el tamaño de la fuente del título */
+    font-weight: 500;
+    margin-top: -60px;
+    padding-right: 30px;
+    padding-left: 30px;
+
   }
-  
-  .study:not(:last-child) h3::after {
-    content: "";
-    position: absolute;
-    left: -16px;
-    top: -20px;
-    height: 350px;
-    width: 2px;
-    background-color: rgba(255, 255, 255, 0.137);
-  }
-  
   .description {
-    width: 70%;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    margin-left: 20%;
+    font-size: 16px; /* Reduce el tamaño de la fuente de la descripción */
   }
-  
-  .description p {
-    font-size: 16px;
+
+  .conteinerAbout2 {
+    display:inline;
+  align-items: center;
+
+}
+.conteinerAbout2  .nombre {
+  font-weight:500;
+  margin-left: 20%;
+}
+  .conteinerAbout2  img {
+    margin-left: 90px;
+    height: 60%; /* Ajusta la altura de la imagen para móviles */
+    width: 60%; /* Ajusta el ancho de la imagen para móviles */
   }
-  
-  .description span {
-    cursor: pointer;
-    font-weight: 500;
-    font-size: 14px;
-    color: #407fdf;
-    width: auto;
-  }
-  .containerTitle {
-    width: 500px;
-    gap: 10px;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .leanMore {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    width: 110px;
-    transition: ease 200ms transform;
-  }
-  
-  .more {
-    font-family: "Onest", sans-serif;
-    color: #facc15;
-    font-size: 18px !important;
-    font-weight: 500;
-    width: 100%;
-    transition: ease 200ms color;
-  }
-  
-  .arrowdown {
-    position: absolute;
-    left: 70%;
-    opacity: 0;
-    color: #407fdf;
-    transition: ease 200ms transform, ease 200ms opacity;
-  }
-  
-  .leanMore:hover .arrowdown {
-    opacity: 1;
-    transform: translateX(30px);
-    color: #0e51b6;
-  }
-  
-  .leanMore:hover .more {
-    color: #0e51b6;
-  }
-  
-  .descriptionSpan {
-    font-size: 16px !important;
-    color: rgb(212, 208, 149) !important;
-    padding-left: 0px;
-  }
-  .iconGeneral {
-    color: white;
-    width: 40px;
-  }
-  
-  .studyBoy {
-    position: absolute;
-    position: absolute;
-    bottom: -130px;
-    right: 0;
-    height: 150px;
-  }
-  @media screen and (max-width: 767px) {
-    .education {
-      padding: 0 30px 0;
-    }
-  
-    .father {
-      width: 100%;
-    }
-  
-    .contenedor {
-      padding: 0;
-      align-items: end;
-    }
-  
-    .study {
-      flex-direction: column;
-      width: 95%;
-      justify-content: end;
-    }
-    .containerTitle {
-      width: 100%;
-    }
-  
-    .study:not(:last-child) h3::after {
-      left: -15px;
-      height: 680px;
-    }
-    .study h3::before {
-      left: -19px;
-    }
-  
-    .description {
-      width: 100%;
-    }
-  
-    .studyBoy {
-      display: none;
-    }
-  }
+}

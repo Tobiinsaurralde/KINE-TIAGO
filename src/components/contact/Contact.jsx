@@ -40,7 +40,7 @@ function Contact() {
       );
   };
 
-  return (
+ /* return (
     <section className={style.contact} id="contact">
       
       <div className={style.father}>
@@ -51,13 +51,18 @@ function Contact() {
         <div className={style.contenedor}>
           <div className={style.contactme}>
             <div className={style.contactos}>
-              <a /*href="mailto:kinetiagoinsa@gmail.com"*/>
+                
+              <a href="mailto:kinetiagoinsa@gmail.com"></a>
+              
+              <a /*href="mailto:kinetiagoinsa@gmail.com">
                 <BiLogoGmail className={style.iconContact} />
-                ejemplo@gmail.com
-                {/*kinetiagoinsa@gmail.com*/}
+                {/*ejemplo@gmail.com}
+                kinetiagoinsa@gmail.com
               </a>
               <a
-               /* href="https://www.google.com/maps/place/Corrientes/@-27.4860751,-58.8747897,12z/data=!3m1!4b1!4m6!3m5!1s0x94456b79d5bed36b:0xfa999f1ef3b40646!8m2!3d-27.4692131!4d-58.8306349!16zL20vMDJ0Ymo1?entry=ttu"*/
+               href="https://www.google.com/maps/place/Corrientes/@-27.4860751,-58.8747897,12z/data=!3m1!4b1!4m6!3m5!1s0x94456b79d5bed36b:0xfa999f1ef3b40646!8m2!3d-27.4692131!4d-58.8306349!16zL20vMDJ0Ymo1?entry=ttu"
+
+               /* href="https://www.google.com/maps/place/Corrientes/@-27.4860751,-58.8747897,12z/data=!3m1!4b1!4m6!3m5!1s0x94456b79d5bed36b:0xfa999f1ef3b40646!8m2!3d-27.4692131!4d-58.8306349!16zL20vMDJ0Ymo1?entry=ttu"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -66,12 +71,13 @@ function Contact() {
                 Ciudad, País.
               </a>
               <a
-                /*href="https://www.linkedin.com/in/tiago-insaurralde-a4b328211/?originalSubdomain=ar"*/
+                href="https://www.linkedin.com/in/tiago-insaurralde-a4b328211/"
+
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <FaLinkedin className={style.iconContact} />
-                /Usuario
+                /Tiagoinsaurralde
               </a>
               <a
               href="https://www.instagram.com/tiago.insaurralde"
@@ -79,7 +85,8 @@ function Contact() {
               className={style.iconsRed}
             >
                {/*<FaInstagram className={style.instagramIcon} />
-                /tiago.insaurralde*/}
+                /tiago.insaurralde/*<FaInstagram className={style.instagramIcon} />
+                /tiago.insaurralde}
             </a>
             </div>
             <div className={style.msj}>
@@ -112,5 +119,5 @@ function Contact() {
     </section>
   );
 }
-
+*/}
 export default Contact;

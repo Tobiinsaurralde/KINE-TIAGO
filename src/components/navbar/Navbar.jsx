@@ -1,21 +1,38 @@
 import React, { useState, useEffect } from "react";
 import style from "./navbar.module.css";
-import { MdOutlineLightMode, } from "react-icons/md";
-import { Link } from "react-scroll";
-import logo from "../../assets/logo.png";
+import { MdOutlineLightMode } from "react-icons/md";
+import { Link } from "react-router-dom";
+import logo from "../../assets/logonavbar.png";
 import { TbMenu2 } from "react-icons/tb";
+import { FaInstagram } from "react-icons/fa"; // Importar ícono de Instagram
 import { IoClose } from "react-icons/io5";
-//! /////////////////////////
 import school from "../../assets/school.svg";
 import code from "../../assets/code.svg";
 import user from "../../assets/user.svg";
+import dumbbell from "../../assets/dumbbell.svg"; // Importa el ícono de mancuerna
 import aboutMe from "../../assets/user-check.svg";
+
 function Navbar() {
   const [showSidebar, setShowSidebar] = useState(false);
 
   const toggleSidebar = () => {
-    setShowSidebar(!showSidebar);
+    setShowSidebar(prevState => !prevState);
   };
+
+  useEffect(() => {
+    // Agregar o quitar la clase 'sidebar-active' en el body cuando la barra lateral está abierta
+    if (showSidebar) {
+      document.body.classList.add('sidebar-active');
+    } else {
+      document.body.classList.remove('sidebar-active');
+    }
+    
+    // Limpieza de efecto
+    return () => {
+      document.body.classList.remove('sidebar-active');
+    };
+  }, [showSidebar]);
+
   const toggleMode = () => {
     document.body.classList.toggle('dark-mode');
     if (document.body.classList.contains('dark-mode')) {
@@ -31,6 +48,7 @@ function Navbar() {
       document.body.classList.add(savedTheme);
     }
   }, []);
+
   return (
     <nav className={style.navBar}>
       <div className={style.divLogo}>
@@ -38,16 +56,13 @@ function Navbar() {
       </div>
 
       <ul className={style.navBarUl}>
-     
         <li className={style.mobileMenuButton} onClick={toggleSidebar}>
           <TbMenu2 />
         </li>
-        <li>
-          <MdOutlineLightMode className={style.mode} onClick={toggleMode} />
-        </li> 
+        
         <li className={style.desktopli}>
           <Link
-            to="about"
+            to="/"
             smooth={true}
             duration={500}
             offset={-70}
@@ -58,8 +73,11 @@ function Navbar() {
           </Link>
         </li>
         <li className={style.desktopli}>
+          <Link to="/entrenador-online">ENTRENAMIENTO ONLINE</Link>
+        </li>
+        <li className={style.desktopli}>
           <Link
-            to="education"
+            to="about"
             smooth={true}
             duration={500}
             offset={-70}
@@ -69,27 +87,18 @@ function Navbar() {
             SOBRE MÍ
           </Link>
         </li>
-     
-        <li className={style.desktopli}>
-          <Link
-            to="contact"
-            smooth={true}
-            duration={500}
-            offset={-70}
-            spy={true}
-            exact="true"
-          >
-            CONTACTO
-          </Link>
+        <li className={style.hideOnMobile}>
+          <a href="https://www.instagram.com/kinetiago" target="_blank" rel="noopener noreferrer">
+            <FaInstagram className={style.socialIcon} />
+          </a>
         </li>
-      
       </ul>
 
       {showSidebar && (
         <div className={style.sidebar}>
           <div className={style.header}>
             <div className={style.divLogo}>
-              <img src={logo} alt="-logo" className={style.logo} />
+              <img src={logo} alt="-logo" className={style.logo2} />
             </div>
             <button className={style.closeButton} onClick={toggleSidebar}>
               <IoClose />
@@ -98,7 +107,35 @@ function Navbar() {
 
           <div className={style.sidebarUl}>
             <ul>
-          {/*  <li>
+              <li>
+                <Link
+                  onClick={toggleSidebar}
+                  to="/"
+                  smooth={true}
+                  duration={500}
+                  offset={-70}
+                  spy={true}
+                  exact="true"
+                >
+                  <img src={aboutMe} alt="/" />
+                  Inicio
+                </Link>
+              </li>
+              <li>
+                <Link
+                  onClick={toggleSidebar}
+                  to="/entrenador-online"
+                  smooth={true}
+                  duration={500}
+                  offset={-70}
+                  spy={true}
+                  exact="true"
+                >
+                  <img src={dumbbell} alt="Dumbbell Icon" /> {/* Usa el ícono de mancuerna */}
+                  Entrenamiento Online
+                </Link>
+              </li>
+              <li>
                 <Link
                   onClick={toggleSidebar}
                   to="about"
@@ -108,72 +145,14 @@ function Navbar() {
                   spy={true}
                   exact="true"
                 >
-                  <img src={aboutMe} alt="aboput" />
-                 Entrenamientos Online
-                </Link>
-              </li>*/}
-              <li>
-                <Link
-                  onClick={toggleSidebar}
-                  to="about"
-                  smooth={true}
-                  duration={500}
-                  offset={-70}
-                  spy={true}
-                  exact="true"
-                >
-                  <img src={aboutMe} alt="aboput" />
-                  Sobre mí
-                </Link>
-              </li>
-            
-              <li>
-                <Link
-                  onClick={toggleSidebar}
-                  to="education"
-                  smooth={true}
-                  duration={500}
-                  offset={-70}
-                  spy={true}
-                  exact="true"
-                >
-                  <img src={school} alt="school" />
-                  Educación
+                  <img src={user} alt="/About" />
+                  Sobre Mí
                 </Link>
               </li>
               <li>
-                <Link
-                  onClick={toggleSidebar}
-                  to="contact"
-                  smooth={true}
-                  duration={500}
-                  offset={-70}
-                  spy={true}
-                  exact="true"
-                >
-                  <img src={user} alt="contacto" />
-                  Contacto
-                </Link>
+                {/* Aquí podrías agregar más enlaces si es necesario */}
               </li>
-              <li>
-               {/* <Link
-                  onClick={toggleSidebar}
-                  to="portfolio"
-                  smooth={true}
-                  duration={500}
-                  offset={-70}
-                  spy={true}
-                  exact="true"
-                >
-                  <img src={code} alt="proyectos" />
-                  Asesorias
-                </Link>*/}
-              </li>
-            
             </ul>
-          </div>
-          <div className={style.bottomAside}>
-            <p>© 2024 Tobias Insaurralde - Todos los derechos reservados</p>
           </div>
         </div>
       )}

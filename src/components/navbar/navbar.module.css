@@ -1,37 +1,61 @@
+/* Importar la fuente desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 .navBar {
-    width: 100%;
-    padding: 0 70px 0 70px;
-    box-sizing: border-box;
-    height: 100px;
-    /*background-color: transparent;*/
-    background-color: #2d2d2d;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 16px;
-font-family:Arial;
-    font-weight:20;
-    top: 0;
-    width: 100%;
-    z-index: 200;
-    backdrop-filter: blur(1.5px);
-  }
+  padding: 0 70px;
+  box-sizing: border-box;
+  height: 170px;
+  background-color: #2d2d2d;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight:400;
+  top: 0;
+  z-index: 200;
+  backdrop-filter: blur(1.5px);
+  font-family: 'Robotoz', sans-serif;
+  font-style: normal;
+}
+
+  /* Añade esto a tu archivo navbar.module.css */
+
+.navBar a {
+  text-decoration: none;  /* Elimina el subrayado */
+  color: inherit; /* Usa el color inherente, usualmente el color del texto */
+}
+
   .desktopli {
     color: #ffffff;
-    height: 100%;
-    margin-left: 18px;
-
+    height: 120%;
+    margin-left: 14px;
+    margin-top: 3px;
+    margin-right: 8px;
   }
+
   .mode{
-    margin-top: 3.5px;
+    margin-top: 9px;
+    margin-left: 9px;
     color: #ffffff;
+    margin-right: 40px;
     }
+
   .divLogo {
+    margin-left: 50px;
     height: 40px;
+    margin-top:8px;
   }
   
   .logo {
     height: 40px;
+
+  }
+  .navBarUl .socialIcon {
+    color: rgb(249, 249, 249);
+    margin-top: 7px; 
+    margin-left: 15px;
+    margin-right: 50px;
+    height: 20px; 
   }
   
   .navBarUl {
@@ -47,12 +71,12 @@ font-family:Arial;
   }
   
   .navBarUl li:hover {
-    color: #08376d;
+    color: #ff6b6b;
     transition: 50ms ease;
   }
   
   .navBarUl a:hover {
-    color: #0a1c5d;
+    color: #b64949;
     transition: 50ms ease;
   }
   
@@ -67,235 +91,238 @@ font-family:Arial;
     display: none;
   }
   
-  /* Estilos para pantalla de 27" */
-  @media screen and (max-width: 2700px) {
-    .navBar {
-      padding: 0 80px 0 80px;
-      height: 80px;
-    }
-  
-    .divLogo,
-    .logo {
-      height: 45px;
-    }
-  
-    .navBarUl {
-      gap: 36px;
-    }
-  
-    .mode {
-      font-size: 18px;
-    }
+/* Estilos para pantalla de 27" */
+@media screen and (max-width: 2700px) {
+  .navBar {
+    padding: 0 80px;
+    height: 78px;
   }
-  
-  /* Estilos para pantalla de 23" */
-  @media screen and (max-width: 2300px) {
-    .navBar {
-      padding: 0 70px 0 70px;
-      height: 75px;
-    }
-  
-    .divLogo,
-    .logo {
-      height: 40px;
-    }
-  
-    .navBarUl {
-      gap: 33px;
-    }
-  
-    .mode {
-      font-size: 17px;
-    }
-  }
-  
-  /* Estilos para pantalla de 19" */
-  @media screen and (max-width: 1900px) {
-    .navBar {
-      padding: 0 60px 0 60px;
-      height: 70px;
-    }
-  
-    .divLogo,
-    .logo {
-      height: 35px;
-    }
-  
-    .navBarUl {
-      gap: 30px;
-    }
-  
-    .mode {
-      font-size: 16px;
-    }
-  }
-  
-  /* Estilos para pantalla de 15" */
-  @media screen and (max-width: 1500px) {
-    .navBar {
-      padding: 0 50px 0 50px;
-      height: 65px;
-    }
-  
-    .divLogo,
-    .logo {
-      height: 30px;
-    }
-  
-    .navBarUl {
-      gap: 27px;
-    }
-  
-    .mode {
-      font-size: 15px;
-    }
-  }
-  
-  /* Estilos para pantalla de 13" */
-  @media screen and (max-width: 1300px) {
-    .navBar {
-      padding: 0 40px 0 40px;
-      height: 70px;
-      padding-right: 40px;
-    }
-  
-    .divLogo,
-    .logo {
-      height:48px;
-      border-radius: 18px;
-    }
-  
-    .navBarUl {
-      gap: 24px;
-    }
-  
-    .mode {
-      font-size: 14px;
-    }
-  }
-  
-  /* Estilos para dispositivos móviles */
-  @media screen and (max-width: 600px) {
-    .navBar {
-      padding: 0 20px 0 20px;
-      height: 55px;
-  position: fixed;
 
-    }
-    .desktopli {
-      display: none;
-    }
-    .mobileMenuButton {
-      display: block;
-      display: flex;
-      align-items: center;
-    }
-    .divLogo,
-    .logo {
-      height: 30px;
-    }
-  
-    .navBarUl {
-      gap: 20px;
-    }
-  
-    .mode {
-      font-size: 19px;
-      
-    }
-  
-    .navBar {
-      flex-direction: row-reverse;
-      height: 65px;
-    }
-    .navBar {
-      padding: 0 30px 0;
-    }
-    .navBarUl {
-      padding: 0;
-      font-size: 30px;
-    }
-  
-    .sidebar {
-      display: flex;
-      padding: 0px 30px;
-  
-      height: 100vh;
-      width: 100%;
-      position: fixed;
-      top: 0;
-      left: 0;
-      z-index: 100;
-      background-color: rgb(57, 55, 55);
-      backdrop-filter: blur(65px);
-      display: flex;
-      box-sizing: border-box;
-      background-color: #303030;
-      background-image: radial-gradient(
-        ellipse at 50% -20%,
-        rgba(181, 178, 178, 0.3),
-        rgba(0, 0, 0, 0)
-      );
-      background-size: cover;
-      background-attachment: fixed;
-      flex-direction: column;
-    }
-  
-    .header {
-      height: 75px;
-      display: flex;
-      justify-content: space-between;
-      flex-direction: row;
-      align-items: center;
-  
-      border-bottom: 1px solid rgba(255, 255, 255, 0.172);
-    }
-  
-    .closeButton {
-      background-color: transparent;
-      border: none;
-      color: white;
-      font-size: 30px;
-      text-align: center;
-      display: flex;
-      cursor: pointer;
-      &:hover {
-        color: #facc15;
-      }
-    }
-  
-    .sidebarUl ul {
-      list-style-type: none;
-      display: flex;
-      flex-direction: column;
-      gap: 30px;
-      margin-top: 40px;
-      padding: 0;
-      font-size: 18px;
-    }
-  
-    .sidebarUl a {
-      cursor: pointer;
-      color: rgb(255, 255, 255);
-      text-decoration: none;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      font-weight: 400;
-      font-size: 18px;
-    }
-  
-    .bottomAside {
-      width: 100%;
-      padding: 0;
-      font-size: 12px;
-      color: rgba(250, 250, 250, 0.215);
-      bottom: 0;
-      height: 50%;
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      flex-direction: column;
-    }
-    
+  .divLogo,
+  .logo {
+    height: 45px;
   }
+
+  .navBarUl {
+    gap: 36px;
+  }
+
+  .mode {
+    font-size: 18px;
+  }
+}
+
+/* Estilos para pantalla de 23" */
+@media screen and (max-width: 2300px) {
+  .navBar {
+    padding: 0 70px;
+    height: 72px;
+  }
+
+  .divLogo,
+  .logo {
+    height: 40px;
+  }
+
+  .navBarUl {
+    gap: 33px;
+  }
+
+  .mode {
+    font-size: 17px;
+  }
+}
+
+/* Estilos para pantalla de 19" */
+@media screen and (max-width: 1900px) {
+  .navBar {
+    padding: 0 60px;
+    height: 68px;
+  }
+
+  .divLogo,
+  .logo {
+    height: 35px;
+  }
+
+  .navBarUl {
+    gap: 30px;
+  }
+
+  .mode {
+    font-size: 16px;
+  }
+}
+
+/* Estilos para pantalla de 15" */
+@media screen and (max-width: 1500px) {
+  .navBar {
+    padding: 0 50px;
+    height: 64px;
+  }
+
+  .divLogo,
+  .logo {
+    height: 30px;
+  }
+
+  .navBarUl {
+    gap: 27px;
+  }
+
+  .mode {
+    font-size: 15px;
+  }
+}
+
+/* Estilos para pantalla de 13" */
+@media screen and (max-width: 1300px) {
+  .navBar {
+    padding: 0 40px;
+    height: 70px;
+  }
+
+  .divLogo,
+  .logo {
+    height: 120px;
+    border-radius: 18px;
+  }
+
+  .navBarUl {
+    gap: 24px;
+  }
+
+  .mode {
+    font-size: 14px;
+  }
+}
+
+ /* Estilos para dispositivos móviles */
+@media screen and (max-width: 600px) {
+  .navBar {
+    width: 100%;
+    padding: 0 20px;
+    height: 70px;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  
+  .desktopli {
+    display: none;
+  }
+  
+  .mobileMenuButton {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+  }
+  
+  .divLogo,
+  .logo {
+    height: 100%;
+  }
+  
+  .logo2 {
+    height: 120%;
+    margin-left: -20px;
+  }
+  
+  .navBarUl {
+    gap: 20px;
+    padding: 0;
+    font-size: 30px;
+  }
+  
+  .mode {
+    font-size: 19px;
+  }
+  
+  .sidebar {
+    display: block;
+    flex-direction: column;
+    padding: 0 30px;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: #303030;
+    backdrop-filter: blur(65px);
+    background-image: radial-gradient(
+      ellipse at 50% -20%,
+      rgba(181, 178, 178, 0.3),
+      rgba(0, 0, 0, 0)
+    );
+    background-size: cover;
+    background-attachment: fixed;
+    box-sizing: border-box;
+    overflow: hidden; /* Asegura que el contenido dentro de la barra lateral no se desplace */
+  }
+  
+  .header {
+    width: 100%;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.172);
+  }
+  
+  .closeButton {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .closeButton:hover {
+    color: #ffffff;
+  }
+  
+  .sidebarUl ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 40px;
+    padding: 0;
+    font-size: 18px;
+  }
+  
+  .sidebarUl a {
+    cursor: pointer;
+    color: #ffffff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 400;
+    font-size: 18px;
+  }
+  
+  .bottomAside {
+    width: 100%;
+    padding: 0;
+    font-size: 12px;
+    color: rgba(250, 250, 250, 0.215);
+    height: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  /* Ocultar el ícono de Instagram en móviles */
+  .hideOnMobile {
+    display: none;
+  }
+}
+
+/* Estilo para el body cuando la barra lateral está activa */
+body.sidebar-active {
+  overflow: hidden; /* Desactiva el desplazamiento del body cuando la barra lateral está activa */
+}

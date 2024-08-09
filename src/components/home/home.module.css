@@ -1,0 +1,423 @@
+/* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Inhabilita la barra de desplazamiento horizontal */
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+
+* {
+  box-sizing: border-box; /* Incluye el padding y el borde en el ancho y alto de los elementos */
+}
+
+.education {
+  padding: 20px;
+}
+
+.divLogo {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.logo {
+  height: 110px;
+  border-radius: 18px;
+  display: block;
+  margin: 0 auto;
+}
+
+.containerAbout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px;
+  padding: 40px 20px;
+  max-width: 1200px;
+  width: 100%;
+  margin-top: -80px;
+}
+
+.conteinerAbout1 {
+  text-align: center;
+  margin-bottom: 4px;
+  width: 70%;
+}
+
+.titleLiteral {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.textGradientt {
+  margin-top: -80px;
+  font-weight: bold;
+  background: linear-gradient(90deg, #242424, #242424);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.tecnico {
+  font-size: 1.25rem;
+  color: #4a4a4a;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.linearoja {
+  width: 40px;
+  height: auto;
+  margin-top: -15px;
+  margin-left: 22px;
+}
+
+.tecnico2 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #242424;
+  margin-top: 20px;
+}
+
+.greyBlock {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 25px;
+  border-radius: 20px;
+  margin-bottom: 40px;
+  margin-top: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.leftBlock {
+  text-align: center;
+  width: 45%;
+  margin-top: -60px;
+}
+
+.fotoPerfil {
+  width: 190px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 5%;
+  margin-bottom: 0;
+  margin-top: 30px;
+  margin-left: 40px;
+}
+
+.listItem {
+  font-weight: 300;
+  margin-top: -10px;
+}
+
+.rightBlock {
+  display: flex;
+  width: 50%;
+  gap: 20px;
+}
+
+.twoCardBlock {
+  margin-top: -30px;
+  display: flex;
+  align-items: center;
+  height: 320px;
+  flex-direction: row; 
+  justify-content: space-around; /* Distribuye el espacio de manera uniforme entre las tarjetas */
+  background: linear-gradient(135deg, #fafbfd 0%, #e4e7eb 80%);
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px; /* Reducir el padding para hacerlas menos altas */
+  width: 50%;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.twoCardBlock:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.cardIcon {
+  font-size: 50px;
+  color: #ff6b6b;
+  margin-bottom: 10px; /* Reducir el margen inferior */
+}
+
+.cardContent {
+  max-width: 300px;
+}
+
+.cardTitle {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #141414;
+  margin-top: -6px; /* Reducir el margen inferior */
+}
+
+.cardText {
+  font-size: 1.1em;
+  margin-top: -8px; /* Reducir el margen inferior */
+  font-family: 'Roboto', sans-serif;
+  color: #3d3d3d;
+  line-height: 1.1;
+  margin-bottom: 15px; /* Reducir el margen inferior */
+}
+
+.cardText::before {
+  content: " ";
+  color: #ff6b6b;
+  font-weight: bold;
+}
+
+.arrow {
+  width: 40px;
+  height: 50px;
+  color: #e47877;
+  margin-top: -10px;
+  margin-left: 10px;
+}
+
+.subtitle {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 1.3rem;
+  color: #333;
+}
+
+.boldText {
+  font-weight: bold;
+  color: #e47877;
+}
+
+.moreInfoLink {
+  color: #b81b1b;
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 100px;
+}
+
+.moreInfoLink:hover {
+  color: #e47877;
+}
+
+.blackBlock {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw; /* Ocupa todo el ancho de la ventana */
+  padding: 40px 20px;
+  background: #333;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 0; /* Quitar el border-radius para que ocupe todo el ancho */
+  height: 360px; /* Ocupa toda la altura restante */
+  margin-bottom: -40px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+#root {
+  flex: 1;
+}
+
+main {
+  flex: 1;
+}
+
+footer {
+  flex-shrink: 0;
+}
+
+.blackBlock .logo {
+  margin-right: 150px;
+  margin-top: -190px;
+  width: 130px;
+  height: 130px;
+}
+
+.services {
+  width: 45%;
+  margin-left: 250px;
+}
+
+.aboutMe {
+  width: 45%;
+  margin-right: 90px;
+}
+
+.services h3, .aboutMe h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.services ul, .aboutMe ul {
+  list-style: none;
+  padding: 0;
+}
+
+.services li, .aboutMe li {
+  margin-bottom: 10px;
+}
+
+.services a, .aboutMe a {
+  color: #e47877;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.services a:hover, .aboutMe a:hover {
+  color: #c46665;
+  text-decoration: underline;
+}
+
+.tobi {
+  text-align: center;
+  margin-top: -80px;
+  font-size: 0.875rem;
+  color: #666;
+}
+
+/* Estilos Responsivos */
+@media screen and (max-width: 767px) {
+  .greyBlock {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .leftBlock, .rightBlock {
+    width: 100%;
+    margin: 0; /* Eliminar márgenes para ocupar todo el ancho */
+  }
+.leftBlock{
+  order:2;
+  flex-direction: column;
+
+}
+  .rightBlock {
+    order: 1; /* Colocar las tarjetas después del bloque izquierdo */
+    flex-direction: column;
+
+    align-items: center;
+  }
+.divLogo{
+  margin-top: 6px;
+
+}
+  .twoCardBlock {
+    flex-direction: column;
+
+    width: 90%;
+    margin: 0 auto; /* Centrar las tarjetas */
+  }
+
+  .blackBlock {
+    background: #333;
+    flex-direction: column;
+    color: #fff;
+    padding: 40px 20px;
+    margin-top: 40px;
+    border-radius: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+  }
+  
+  .blackBlock .logo {
+    margin-bottom: 20px;
+    margin-left: -60px;
+  }
+  .services{
+  width: 100%;
+
+  margin-bottom: 20px;
+  
+
+  }
+  .aboutMe {
+    width: 100%;
+    text-align: center;
+
+    margin-bottom: 20px;
+  }
+  
+  .services h3, .aboutMe h3 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+
+    font-weight: 600;
+    color: #fafafa; /* Color de los encabezados */
+    border-bottom: 2px solid #fefefe; /* Línea de separación */
+    padding-bottom: 10px; /* Espacio debajo del texto */
+  }
+  
+  .services ul, .aboutMe ul {
+    list-style: none;
+
+    padding: 0;
+  }
+  .formacionExperiencia {
+    font-size: 1.3rem; /* Tamaño grande del texto */
+    margin-bottom: 15px;
+
+    font-weight: 700;
+    color: #000000;
+  }
+  
+  
+  .services li, .aboutMe li {
+    margin-bottom: 10px;
+  }
+  
+  .services a, .aboutMe a {
+    color: #e47877;
+    text-decoration: none;
+    font-size: 1.125rem;
+    text-align: center;
+
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+  }
+  
+  .services a:hover, .aboutMe a:hover {
+    color: #c46665;
+    text-decoration: underline;
+  }
+  
+  .tobi {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.875rem;
+    color: #666;
+    margin-right: -30px;
+  }
+  
+  .moreInfoLink {
+    display: inline-block;
+    text-align: center;
+    margin-top: 10px; /* Ajusta el margen según necesites */
+    margin-bottom:10px;
+    font-size: 1rem; /* Ajusta el tamaño de la fuente si es necesario */
+  }
+  
+  .moreInfoLink span {
+    display: block;
+    line-height: 1.5; /* Ajusta el interlineado para mejorar el espaciado */
+  }
+  
+  .moreInfoLink::after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+  
+}

@@ -334,7 +334,7 @@ function Education() {
           <div className={style.services}>
             <h3>Servicios:</h3>
             <ul>
-              <li><a href="entrenador-online">Entrenamiento Online</a></li>
+              <li><a href="entrenador-online">Entrenamiento</a></li>
               <li><a href="rehabilitación">Rehabilitación</a></li>
             </ul>
           </div>

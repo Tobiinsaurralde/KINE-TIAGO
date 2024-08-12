@@ -54,10 +54,8 @@ html, body {
 
 .textGradientt {
   margin-top: -80px;
-  font-weight: bold;
-  background: linear-gradient(90deg, #242424, #242424);
+  font-weight: 00;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .tecnico {
@@ -315,7 +313,7 @@ footer {
   .twoCardBlock {
     flex-direction: column;
 
-    width: 90%;
+    width: 100%;
     margin: 0 auto; /* Centrar las tarjetas */
   }
 
@@ -335,11 +333,11 @@ footer {
   
   .blackBlock .logo {
     margin-bottom: 20px;
-    margin-left: -60px;
+    margin-left: -8px;
   }
   .services{
   width: 100%;
-
+margin-right: 20px;
   margin-bottom: 20px;
   
 

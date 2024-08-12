@@ -671,7 +671,7 @@ margin-right: 90px;
       flex-direction: column; /* Cambia a columna para móviles */
       align-items: center; /* Centra los elementos */
       gap: -205px; /* Reduce el espacio entre las tarjetas */
-      height: 230px;
+      height: 248px;
     width: 90%; /* Aumenta el ancho en pantallas pequeñas */
     margin: 10px 0; /* Ajusta el margen alrededor de las tarjetas transparentes */
   }
@@ -703,10 +703,6 @@ margin-right: 90px;
     text-align: center; /* Centra el texto */
   }
 
-  .fotoPerfil {
-    width: 20px; /* Reduce el ancho de la foto de perfil */
-    height: 20px; /* Reduce el alto de la foto de perfil */
-  }
 
   .arrowRight {
     width: 40px; /* Reduce el tamaño del ícono de flecha */

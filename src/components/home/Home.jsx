@@ -3,7 +3,7 @@ import style from "./home.module.css";
 import { FaInstagramSquare, FaLinkedin } from "react-icons/fa";
 import { MdOutlineLightMode } from "react-icons/md";
 import { RiArrowDownSLine } from "react-icons/ri";
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";  // Cambié react-scroll por react-router-dom
 import logo from "../../assets/logo.png";
 import fondoPerfil from "../../assets/about.jpeg";
 import linearoja from "../../assets/linearoja.png";
@@ -60,19 +60,17 @@ const Home = () => {
         <div className={style.greyBlock}>
 
         <div className={style.leftBlock}>
-  <img src={fondoPerfil} alt="fondo-perfil" className={style.fotoPerfil} />
-  <h2>Tiago Insaurralde</h2>
-  <p className={style.listItem}>Kinesiologo Graduado en Universidad Nacional del Nordeste</p>
-  <p className={style.listItem}>Preparador Físico Certificado</p>
-</div>
+          <img src={fondoPerfil} alt="fondo-perfil" className={style.fotoPerfil} />
+          <h2>Tiago Insaurralde</h2>
+          <p className={style.listItem}>Kinesiologo Graduado en Universidad Nacional del Nordeste</p>
+          <p className={style.listItem}>Preparador Físico Certificado</p>
+        </div>
 
           <div className={style.rightBlock}>
             <TwoCardBlock
               Icon={CgGym}
               title="Entrenamiento"
-              text1="Servicio que incluye evaluación funcional, planificación semanal del entrenamiento adaptado a las necesidades , seguimiento personalizado, y asesoramiento continuo para optimizar los resultados.
-"
-
+              text1="Servicio que incluye evaluación funcional, planificación semanal del entrenamiento, seguimiento personalizado, y asesoramiento continuo para optimizar los resultados."
             />
             <TwoCardBlock
               Icon={IoFitness}
@@ -87,16 +85,16 @@ const Home = () => {
           <h2>¡Descubre mi servicio de <span className={style.boldText}>entrenamiento y rehabilitación online!</span></h2>
         </div>
         <p>
-          <a href="/entrenador-online" className={style.moreInfoLink}>
+          <Link to="/entrenador-online" className={style.moreInfoLink}>
             ¡Haz click para más información!
-          </a>
+          </Link>
         </p>
         <div className={style.blackBlock}>
           <div className={style.services}>
             <h3>Servicios:</h3>
             <ul>
-              <li><a href="entrenador-online">Entrenamiento Online</a></li>
-              <li><a href="rehabilitación">Rehabilitación</a></li>
+              <li><Link to="/entrenador-online">Entrenamiento</Link></li>
+              <li><Link to="/entrenador-online">Rehabilitación</Link></li>
             </ul>
           </div>
           <img src={logo} alt="logo" className={style.logo} />
@@ -104,7 +102,7 @@ const Home = () => {
           <div className={style.aboutMe}>
             <h3>Sobre mí</h3>
             <ul>
-              <li><a href="about">Tiago Insaurralde</a></li>
+              <li><Link to="/about">Tiago Insaurralde</Link></li>
               <li>Redes sociales:</li>
               <li><a href="https://www.instagram.com/kinetiago" target="_blank" rel="noopener noreferrer">Instagram</a></li>
               <li><a href="https://www.linkedin.com/in/tiago-insaurralde-a4b328211/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
@@ -113,9 +111,8 @@ const Home = () => {
         </div>
       </div>
       <div className={style.tobi}>
-      <li><p>© 2024 Tobias Insaurralde - Todos los derechos reservados</p></li>
+        <li><p>© 2024 Tobias Insaurralde - Todos los derechos reservados</p></li>
       </div>
-
     </section>
   );
 }

@@ -3,7 +3,7 @@ import style from "./education.module.css";
 import { FaInstagramSquare, FaLinkedin, FaWhatsapp,FaPhoneSquareAlt, FaPhone} from "react-icons/fa";
 import { MdOutlineLightMode } from "react-icons/md";
 import { RiArrowDownSLine } from "react-icons/ri";
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";  // Cambié react-scroll por react-router-dom
 import logo from "../../assets/logo.png";
 import fondoPerfil from "../../assets/about.jpeg";
 import instagram from "../../assets/instagram.png";
@@ -25,11 +25,17 @@ import { GoSearch } from "react-icons/go";
 
 const Card = ({ title, text, image, transparent, url }) => {
   const handleCardClick = () => {
-    window.location.href = url;
+    if (url) {
+      window.location.href = url;
+    }
   };
 
   return (
-    <div className={`${style.card} ${transparent ? style.transparentCard : ""}`} onClick={handleCardClick}>
+    <div
+      className={`${style.card} ${transparent ? style.transparentCard : ""}`}
+      onClick={handleCardClick}
+      style={{ cursor: url ? "pointer" : "default" }}
+    >
       <img src={image} alt="card-image" className={style.cardImage} />
       <div className={style.cardContent}>
         <h3 className={style.cardTitle}>{title}</h3>
@@ -41,11 +47,17 @@ const Card = ({ title, text, image, transparent, url }) => {
 
 const Card1 = ({ title, text, image, transparent, url }) => {
   const handleCardClick = () => {
-    window.location.href = url;
+    if (url) {
+      window.location.href = url;
+    }
   };
 
   return (
-    <div className={`${style.cardd} ${transparent ? style.transparentCard : ""}`} onClick={handleCardClick}>
+    <div
+      className={`${style.cardd} ${transparent ? style.transparentCard : ""}`}
+      onClick={handleCardClick}
+      style={{ cursor: url ? "pointer" : "default" }}
+    >
       <img src={image} alt="card-image" className={style.cardImage} />
       <div className={style.cardContent}>
         <h3 className={style.cardTitle}>{title}</h3>
@@ -54,22 +66,29 @@ const Card1 = ({ title, text, image, transparent, url }) => {
     </div>
   );
 };
+
 const IconCard = ({ title, text, Icon, transparent, url }) => {
   const handleCardClick = () => {
-    window.location.href = url;
+    if (url) {
+      window.location.href = url;
+    }
   };
 
   return (
-    <div className={`${style.card} ${transparent ? style.transparentCard : ""}`} onClick={handleCardClick}>
+    <div
+      className={`${style.card} ${transparent ? style.transparentCard : ""}`}
+      onClick={handleCardClick}
+      style={{ cursor: url ? "pointer" : "default" }}
+    >
       {Icon && <Icon className={style.cardIcon} />}
       <div className={style.cardContent}>
-        
         <h3 className={style.cardTitle}>{title}</h3>
         <p className={style.cardText}>{text}</p>
       </div>
     </div>
   );
 };
+
 const TwoCardBlock = ({ title1, text1, title2, text2, url1, url2 }) => {
   return (
     <div className={style.twoCardBlock}>
@@ -332,10 +351,10 @@ function Education() {
 </div>
             <div className={style.blackBlock}>
           <div className={style.services}>
-            <h3>Servicios:</h3>
+          <h3>Servicios:</h3>
             <ul>
-              <li><a href="entrenador-online">Entrenamiento</a></li>
-              <li><a href="rehabilitación">Rehabilitación</a></li>
+              <li><Link to="/entrenador-online">Entrenamiento</Link></li>
+              <li><Link to="/entrenador-online">Rehabilitación</Link></li>
             </ul>
           </div>
           <img src={logo} alt="logo" className={style.logo} />
@@ -343,7 +362,7 @@ function Education() {
           <div className={style.aboutMe}>
             <h3>Sobre mí</h3>
             <ul>
-              <li><a href="about">Tiago Insaurralde</a></li>
+              <li><Link to="/about">Tiago Insaurralde</Link></li>
               <li>Redes sociales:</li>
               <li><a href="https://www.instagram.com/kinetiago" target="_blank" rel="noopener noreferrer">Instagram</a></li>
               <li><a href="https://www.linkedin.com/in/tiago-insaurralde-a4b328211/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
@@ -352,9 +371,8 @@ function Education() {
         </div>
       </div>
       <div className={style.tobi}>
-      <li><p>© 2024 Tobias Insaurralde - Todos los derechos reservados</p></li>
+        <li><p>© 2024 Tobias Insaurralde - Todos los derechos reservados</p></li>
       </div>
-
     </section>
   );
 }

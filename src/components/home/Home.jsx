@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
+import { useLocation } from "react-router";
 import style from "./home.module.css";
 import { FaInstagramSquare, FaLinkedin } from "react-icons/fa";
 import { MdOutlineLightMode } from "react-icons/md";
 import { RiArrowDownSLine } from "react-icons/ri";
-import { Link } from "react-router-dom";  // Cambié react-scroll por react-router-dom
+import { HashLink as Link } from 'react-router-hash-link';
 import logo from "../../assets/logo.png";
 import fondoPerfil from "../../assets/about.jpeg";
 import linearoja from "../../assets/linearoja.png";
@@ -11,6 +12,7 @@ import arrow from "../../assets/arrow.png";
 import { RxDoubleArrowRight } from "react-icons/rx";
 import { CgGym } from "react-icons/cg";
 import { IoFitness } from "react-icons/io5";
+
 import { MdOutlineFitnessCenter } from "react-icons/md";
 
 const TwoCardBlock = ({ Icon, title,text1, text2 }) => {
@@ -30,8 +32,14 @@ const TwoCardBlock = ({ Icon, title,text1, text2 }) => {
 
 const Home = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
+
+  useEffect(() => {
+    
     const savedTheme = localStorage.getItem("theme") || "light-mode";
     document.body.classList.add(savedTheme);
     setIsDarkMode(savedTheme === "dark-mode");
@@ -85,9 +93,9 @@ const Home = () => {
           <h2>¡Descubre mi servicio de <span className={style.boldText}>entrenamiento y rehabilitación online!</span></h2>
         </div>
         <p>
-          <Link to="/entrenador-online" className={style.moreInfoLink}>
-            ¡Haz click para más información!
-          </Link>
+        <Link to="/entrenador-online" className={style.moreInfoLink}>
+    ¡Haz click para más información!
+  </Link>
         </p>
         <div className={style.blackBlock}>
           <div className={style.services}>

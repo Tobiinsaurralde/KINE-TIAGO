@@ -46,13 +46,13 @@ html, body {
 }
 
 .textSection {
-  margin-top: 20px;
+  margin-top: -50px;
 }
 
 .nombre {
   font-size: 2.5rem;
-  color: #272727;
-  font-weight: 700;
+  color: #1d1d1d;
+  font-weight: 600;
   margin-bottom: 30px;
 }
 
@@ -176,16 +176,301 @@ font-size: 1.8;
 
 .tobi {
   text-align: center;
-  margin-top: 20px;
+  margin-top: -20px;
   font-size: 0.875rem;
   color: #666;
   margin-right: -30px;
 }
+/* contact.module.css */
 
-/* Responsive Styles */
+.contact {
+  height: 100vh;
+  box-sizing: border-box;
+  padding: 75px 75px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+}
+.contactList {
+  list-style: none; /* Quitar los puntos de la lista */
+  padding: 0; /* Quitar el padding */
+  margin: 0; /* Quitar el margen */
+  height: 70%;
+}
+
+.contactList li {
+  margin-bottom: 30px; /* Espacio entre cada ítem */
+}
+
+.contactList a {
+  color: inherit; /* Hacer que el color del enlace herede el color del texto padre */
+  text-decoration: none; /* Quitar el subrayado de los enlaces */
+}
+
+
+
+.father {
+  width: 80%;
+}
+.contenedor {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  
+}
+.subtitle {
+  color: #272727;
+  font-weight: 900;
+  margin-bottom: 30px;
+}
+.subtitle h2 {
+  font-size: 3.1rem;
+  font-weight: 600;
+  margin: 0;
+}
+.linearoja {
+  margin-top: -30px;
+  width: 15%;
+  height: 75px;
+}
+.escribime{
+  width: 30%;
+  font-size: 20px;
+}
+.formContact {
+  width: 100%;
+  height: 350px;
+  background-color: #782525;
+  
+}
+.form {
+  margin-top: -30%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  width: 450px;
+  outline: none;
+  box-sizing: border-box;
+  border-color: black;
+margin-left: 20%;
+  
+}
+
+.form input {
+  width: 100%;
+  height: 45px;
+  outline: none;
+  box-sizing: border-box;
+  font-size: 18px;
+  border-radius: 5px;
+  border-color: black;
+  padding: 5px;
+  scrollbar-width: thin;
+  resize: none;
+  scrollbar-color: #b60e0e;
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+border-width: 1px;
+
+}
+
+.form textarea {
+  width: 100%;
+  height: 135px;
+  outline: none;
+  box-sizing: border-box;
+  font-size: 18px;
+  border-radius: 5px;
+  border-color: black;
+  padding: 5px;
+  scrollbar-width: thin;
+  resize: none;
+  scrollbar-color: #7b1212;
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+border-width: 1px;
+}
+
+.send {
+  background: rgb(112, 12, 12);
+  background: linear-gradient(
+    141deg,
+    rgb(182, 14, 14) 0%,
+    rgb(182, 14, 14) 31%,
+    rgb(203, 49, 49) 66%,
+    rgb(215, 22, 22) 100%
+  );
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  font-size: 4px;
+  cursor: pointer;
+}
+
+.form input:focus {
+  border: 1px solid #b60e0e;
+}
+
+.form textarea:focus {
+  border: 1px solid #b60e0e;
+}
+.contactme {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.contactos {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: -40px;
+}
+
+
+.iconContact {
+  margin-right: 10px;
+  color: #272727;
+}
+
+.msj {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.msj img {
+  height: 250px;
+}
+
+.black-background {
+  background-color: black !important;
+}
+
+.bottom {
+  position: absolute;
+  bottom: 40px;
+}
+
+.bottom p {
+  margin-bottom: 40px;
+  font-size: 12px;
+  font-weight: 300;
+  opacity: 0.5;
+}
+
+.iconGeneral {
+  color: rgb(0, 0, 0);
+  width: 40px;
+}
+
+/* Dark mode specific styles */
+body.dark-mode .contact {
+  background-color: rgb(27, 31, 42);
+}
+
+body.dark-mode .contactos a {
+  color: rgb(255, 255, 255);
+}
+
+body.dark-mode .iconGeneral,
+body.dark-mode .subtitle h2,
+body.dark-mode .form input,
+body.dark-mode .form textarea {
+  color: rgb(255, 255, 255);
+}
+
+body.dark-mode .form input,
+body.dark-mode .form textarea {
+  background-color: rgb(45, 45, 45);
+}
+
+body.dark-mode .send {
+  background: linear-gradient(
+    141deg,
+    rgb(255, 255, 255) 0%,
+    rgb(255, 255, 255) 31%,
+    rgb(255, 255, 255) 66%,
+    rgb(255, 255, 255) 100%
+  );
+}
+
+
+
 @media screen and (max-width: 767px) {
-  .containerAbout {  max-width: 100%; 
+  .contact {
+    padding: 0px 30px 90px;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
 
+  .father {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .contenedor {
+    flex-direction: column-reverse;
+    gap: 30px;
+    width: 100%;
+  }
+
+  .formContact {
+    width: 100%;
+  }
+
+  .form {
+    width: 100%;
+  }
+
+  .bottom {
+    bottom: 0px;
+  }
+
+  /* Ajustes responsivos para la sección de contacto */
+  .contactInfo {
+    flex: 1;
+    min-width: 90%; /* Asegura que ocupe todo el ancho en pantallas pequeñas */
+  }
+
+  .contactList li {
+    font-size: 0.9rem;
+    margin-top: 30px;
+  }
+.linearoja{
+  margin-left: 5px;
+}
+  .iconContact {
+    font-size: 1.2rem; /* Reduce un poco el tamaño del icono */
+  }
+
+  .formContainer {
+    margin-top: 30px;
+    margin-left: -35px;
+    flex: 1;
+    min-width: 95%; /* Asegura que ocupe todo el ancho en pantallas pequeñas */
+  }
+
+  .form input,
+  .form textarea {
+    font-size: 0.9rem; /* Ajusta el tamaño de la fuente en pantallas pequeñas */
+  }
+
+  .subtitle h2 {
+    font-size: 2rem;
+  }
+
+  /* Estilos adicionales */
+  .containerAbout {
+    max-width: 100%;
     padding: 20px;
     margin-top: 40px;
   }
@@ -201,12 +486,10 @@ font-size: 1.8;
     margin-bottom: 20px;
   }
 
-    .textSection {
-      width: 100%; /* Asegurarse de que el contenedor ocupe todo el ancho disponible */
-      padding: 0 10px; /* Agregar un poco de padding si es necesario */
-      
-    }
-  
+  .textSection {
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+    padding: 0 10px; /* Agrega un poco de padding si es necesario */
+  }
 
   .blackBlock {
     flex-direction: column;
@@ -217,8 +500,12 @@ font-size: 1.8;
     margin-bottom: 20px;
   }
 
-  .services, .aboutMe {
+  .services,
+  .aboutMe {
     width: 100%;
     margin-bottom: 20px;
+  }
+  .tobi{
+    margin-right: 5px;
   }
 }

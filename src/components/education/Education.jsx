@@ -16,7 +16,7 @@ import card2 from "../../assets/card2.png";
 import card3 from "../../assets/card3.png";
 import card4 from "../../assets/card4.png";
 
-import card5 from "../assets/card5.png";
+import card5 from "../../assets/card5.png";
 
 
 import { LiaToolsSolid } from "react-icons/lia";
@@ -132,7 +132,9 @@ const FAQ = ({ question, answer, isOpen, onClick }) => {
 function Education() {
   const [isDarkMode, setIsDarkMode] = useState(false);
   const [openFAQIndex, setOpenFAQIndex] = useState(null);
-
+  useEffect(() => {
+    window.scrollTo(0, 0); // Esto desplaza la página al inicio
+  }, []);
   useEffect(() => {
     const savedTheme = localStorage.getItem("theme") || "light-mode";
     document.body.classList.add(savedTheme);
@@ -263,18 +265,13 @@ function Education() {
                 <span className={style.tecnico}> Optimiza tu Esfuerzo y consigue Resultados</span>
               </h1>
             </div>
-            <img src={linearoja} className={style.linearoja} />
           </div>
         </div>
-        <span className={style.tecnico2}>¡Comienza tu   <span className={style.boldTextt}>cambio físico </span> de la mano de un <span className={style.boldTextt}> profesional!</span></span>
 
         <div className={style.conteinerAbout2}>
-          <img src={fondoPerfil} alt="fondo-perfil" className={style.fotoPerfill} />
           <div className={style.textIcons}>
-            <h2 className={style.nombre}>Tiago Insaurralde</h2>
             <p className={style.descripcion}>
-              Licenciado en <span className={style.descrip1}>Kinesiología y Fisiatría </span><br />
-              Preparador Físico
+            
             </p>
           </div>
         </div>
@@ -324,7 +321,7 @@ function Education() {
         </div>
 
         <div className={style.subtitle8}>
-          <h2>¿Cómo comienza el servicio de <strong>entrenamiento online</strong>?</h2>
+          <h2>¿Cómo comienza el servicio de <strong>entrenamiento online?</strong></h2>
         </div>
 
         

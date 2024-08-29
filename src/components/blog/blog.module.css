@@ -1,0 +1,217 @@
+/* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Inhabilita la barra de desplazamiento horizontal */
+  height: 100%;
+  font-family: 'Open Sans', sans-serif; /* Aplicar la fuente a todo el documento */
+}
+
+/* About Section */
+.about {
+  background-color: #f7f7f7; /* Fondo suave */
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.linearoja {
+  margin-top: -80px;
+  width: 170px;
+  height: 75px;
+}
+
+.containerAbout {
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  overflow: hidden;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 20px;
+  padding: 40px;
+}
+
+.profileSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.textSection {
+  margin-top: 20px;
+}
+
+.nombre {
+  margin-top: -25px;
+  font-size: 3.1rem;
+  color: #be1515;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+
+.articlesContainer {
+  display: flex;
+  justify-content: space-between; /* Espacio entre las imágenes */
+  gap: 20px;
+  flex-wrap: wrap; /* Permite que los artículos se ajusten en varias filas */
+}
+
+.article {
+  flex: 1 1 30%; /* Hace que cada artículo ocupe al menos el 30% del contenedor */
+  text-align: center;
+  margin-bottom: 20px; /* Espacio entre filas de artículos */
+}
+
+.articleImage {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.articleTitle {
+  color: #363535;
+}
+
+.articleDescription {
+  margin-top: 10px;
+  font-size: 13px;
+  position: relative;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Número de líneas visibles */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis; /* Agrega los puntos suspensivos */
+  color: #555;
+}
+
+.readMoreButton {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #e34f4f;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.readMoreButton:hover {
+  background-color: #921919;
+}
+
+/* Ajusta el margen inferior de la descripción */
+.descripcion {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: #1d1d1d;
+  margin-bottom: 20px;
+  text-align: justify; /* Justifica el texto por defecto */
+}
+
+.socialLink {
+  color: #e47877;
+  text-decoration: none;
+  font-size: 1.25rem;
+  transition: color 0.3s ease;
+}
+
+.socialLink:hover {
+  color: #c46665;
+}
+
+.blackBlock {
+  background: #333;
+  color: #fff;
+  padding: 40px 20px;
+  margin-top: 40px;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+}
+
+.blackBlock .logo {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+  margin-left: -60px;
+}
+
+.services, .aboutMe {
+  margin-bottom: 20px;
+}
+
+.services h3, .aboutMe h3 {
+  font-size: 1.75rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+  color: #fafafa; /* Color de los encabezados */
+  border-bottom: 2px solid #fefefe; /* Línea de separación */
+  padding-bottom: 10px; /* Espacio debajo del texto */
+}
+
+.services ul, .aboutMe ul {
+  list-style: none;
+  padding: 0;
+}
+
+.services li, .aboutMe li {
+  margin-bottom: 10px;
+}
+
+.services a, .aboutMe a {
+  color: #e47877;
+  text-decoration: none;
+  font-size: 1.125rem;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.services a:hover, .aboutMe a:hover {
+  color: #c46665;
+  text-decoration: underline;
+}
+
+.tobi {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.875rem;
+  color: #666;
+  margin-right: -30px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1024px) {
+  .articlesContainer {
+    flex-direction: column;
+  }
+
+  .article {
+    margin-bottom: 40px;
+
+  }
+}
+@media screen and (max-width: 767px) {
+  .containerAbout {  
+    max-width: 100%; 
+    padding: 20px;
+    margin-top: 40px;
+  }
+
+  .profileSection {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .fotoPerfil {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}

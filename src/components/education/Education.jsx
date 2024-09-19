@@ -257,16 +257,7 @@ function Education() {
       </div>
       
       <div className={style.containerAbout}>
-        <div className={style.conteinerAbout1}>
-          <div className={style.conteinerTitle}>
-            <div className={style.titleLiteral}>
-              <h1>
-                <span className={style.textGradientt}>Entrenador Personal Online:</span>
-                <span className={style.tecnico}> Optimiza tu Esfuerzo y consigue Resultados</span>
-              </h1>
-            </div>
-          </div>
-        </div>
+        
 
         <div className={style.conteinerAbout2}>
           <div className={style.textIcons}>
@@ -275,33 +266,19 @@ function Education() {
             </p>
           </div>
         </div>
-        <img src={arrow} alt="arrow" className={style.arrow2} />
 
       </div>
 
       <div className={style.father}>
         <div className={style.subtitlee}>
-          <h2>El servicio de <span className={style.boldText1}>entrenamiento personal online</span> es para vos si…  </h2>
+          <h2>El servicio de <span className={style.boldText1}>asesoría online</span> es para vos si…  </h2>
         </div>
-
         <div className={style.cardsContainer}>
           {cardsData.map((cardd, index) => (
             <Card1 key={index} title={cardd.title} text={cardd.text} image={cardd.image} />
           ))}
         </div>
 
-
-        <div className={style.subtitle}>
-        <img src={arrow} alt="arrow" className={style.arrow} />
-
-          <h2>Así es mi servicio como <span className={style.boldText}>entrenador personal</span></h2>
-        </div>
-
-        <div className={style.cardsContainer}>
-          {moreCardsData.map((card, index) => (
-            <Card key={index} image={card.image} title={card.title} text={card.text} />
-          ))}
-        </div>
 
         <div className={style.greyBlock}>
           <div className={style.leftBlock}>

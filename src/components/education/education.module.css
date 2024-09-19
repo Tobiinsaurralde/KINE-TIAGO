@@ -49,7 +49,7 @@ margin-top: -100px;
 .subtitlee h2{
   text-align: center;
   margin: 20px 0;
-  font-size: 1.6rem;
+  font-size: 2rem;
   font-weight: 300;
 
   color: #333;
@@ -58,8 +58,8 @@ margin-top: -100px;
 .subtitle h2{
   text-align: center;
   margin: 20px 0;
-  font-size: 1.8rem;
-  font-weight: 300;
+  font-size: 2rem;
+  font-weight: 400;
 
   color: #333;
 }
@@ -67,13 +67,13 @@ margin-top: -100px;
   text-align: center;
   margin: 20px 0;
   font-size: 1.8rem;
-  font-weight: 700;
+  font-weight: 800;
 
   color: #333;
   }
   
 .boldText1 {
-
+  font-size: 2rem;
 font-weight: 700;
 }
 
@@ -97,6 +97,7 @@ font-weight: 600;
   justify-content: space-around;
   flex-wrap: wrap;
   width: 100%;
+  margin-top: 30px;
   margin-bottom: 40px;
 }
 .cardd {
@@ -266,7 +267,7 @@ width: 60%;
 }
 
 .arrow2 {
-  margin-top: -30px;
+  margin-top: -5px;
   width: 47px;
   height: 55px;
 }
@@ -425,7 +426,7 @@ margin-right: 90px;
 }
 
 .divLogo {
-  margin-bottom: 20px;
+  margin-bottom: -30px;
   text-align: center;
 }
 

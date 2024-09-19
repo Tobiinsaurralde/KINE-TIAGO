@@ -62,34 +62,35 @@ const Home = () => {
           <div className={style.conteinerTitle}>
             <div className={style.titleLiteral}>
               <h1>
-                <span className={style.textGradientt}>KineTiago - Entrenamiento basado en evidencia</span>
+                <span className={style.textGradientt}>Rehabilitación y entrenamiento basados en evidencia</span>
                 <span className={style.tecnico}>  Actualización constante para ayudarte con tus objetivos</span>
               </h1>
             </div>
             <img src={linearoja} className={style.linearoja} />
           </div>
         </div>
-        <span className={style.tecnico2}> Aprende y aplica:</span>
+        <span className={style.tecnico2}> SERVICIOS:</span>
 
         <div className={style.greyBlock}>
           <div className={style.leftBlock}>
             <img src={fondoPerfil} alt="fondo-perfil" className={style.fotoPerfil} />
-            <h2>Tiago Insaurralde</h2>
-            <p className={style.listItem}>Kinesiologo Graduado en Universidad Nacional del Nordeste</p>
-            <p className={style.listItem}>Preparador Físico Certificado</p>
+            <h2> Klgo. Tiago Insaurralde</h2>
+            <p className={style.listItem1}>Lic. en Kinesiología y Fisiatría Graduado en Universidad Nacional del Nordeste</p>
+            <p className={style.listItem2}>Preparador Físico Certificado</p>
           </div>
 
           <div className={style.rightBlock}>
+          <TwoCardBlock
+              Icon={IoFitness}
+              title="Rehabilitación "
+              text2="Sesiones virtuales programadas, evaluación constante de sintomatología, progresión de cargas, vuelta a la actividad deportiva/laboral/cotidiana."
+            />
             <TwoCardBlock
               Icon={CgGym}
               title="Entrenamiento"
-              text1="Servicio que incluye evaluación funcional, planificación semanal del entrenamiento, seguimiento personalizado, y asesoramiento continuo para optimizar los resultados."
+              text1="Incluye evaluación funcional, planificación semanal del entrenamiento, seguimiento personalizado, y asesoramiento continuo para optimizar los resultados."
             />
-            <TwoCardBlock
-              Icon={IoFitness}
-              title="Rehabilitación "
-              text2="Sesiones virtuales programadas, evaluación constante de sintomatología, progresión de cargas, vuelta a la actividad deportiva/laboral/cotidiana, educación del paciente, asesoría 24hs."
-            />
+           
           </div>
         </div>
         <img src={arrow} alt="arrow" className={style.arrow} />

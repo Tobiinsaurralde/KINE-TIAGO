@@ -60,7 +60,7 @@ function Navbar() {
           <Link to="/entrenador-online">ASESORÍAS ONLINE</Link>
         </li>
         <li className={style.desktopli}>
-          <Link to="/blog">ARTÍCULOS</Link>
+          <Link to="/blog">BLOG</Link>
         </li>
         <li className={style.desktopli}>
           <Link to="/about">SOBRE MÍ</Link>
@@ -136,7 +136,7 @@ function Navbar() {
                   spy={true}
                   exact="true"
                 >
-                  <FaFileAlt /> Artículos
+                  <FaFileAlt /> Blog
                 </Link>
               </li>
              

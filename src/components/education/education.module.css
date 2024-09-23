@@ -33,7 +33,7 @@ html, body {
   text-align: center;
   margin: 20px 0;
   font-size: 1.7rem;
-  font-weight: 500;
+  font-weight: 600;
 
   color: #242424;
 }
@@ -614,7 +614,9 @@ margin-right: 90px;
     margin-top: -15px;
     margin-left: 22px;
   }
-  
+  .subtitlee{
+    font-size: 20px;
+  }
   
   .father {
 
@@ -723,8 +725,8 @@ margin-right: 90px;
   .subtitlee h2{
     text-align: center;
     margin: 20px 0;
-    font-size: 1.1rem;
-    font-weight: 500;
+    font-size: 1.8rem;
+    font-weight: 600;
   
     color: #333;
   }

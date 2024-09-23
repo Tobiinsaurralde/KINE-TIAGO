@@ -25,12 +25,12 @@ function Blog() {
                 <img src={image1} alt="Descripción de la imagen 1" className={style.articleImage}/>
                 <h3 className={style.articleTitle}>Entrenamiento Isométrico</h3>
                 <p className={style.articleDescription}>
-                  {truncateText("¿Sabías que el ejercicio isométrico puede ser una herramienta poderosa para manejar la hipertensión? ¡Es cierto! A través de contracciones musculares sostenidas, sin cambiar la longitud del músculo, podemos lograr grandes beneficios para nuestra salud cardiovascular. Pero, como con todo en la vida, la clave está en la dosificación adecuada.", 22)}
+                  {truncateText("¿Sabías que el ejercicio isométrico puede ser una herramienta poderosa para manejar la hipertensión? ¡Es cierto! A través de contracciones musculares sostenidas , sin cambiar la longitud del músculo, podemos lograr grandes beneficios para nuestra salud cardiovascular. Pero, como con todo en la vida, la clave está en la dosificación adecuada.", 22)}
                 </p>
                 <a href="/entrenamiento-isometrico" className={style.readMoreButton}>Seguir leyendo</a>
               </div>
 
-              <div className={style.article}>
+              {/*<div className={style.article}>
                 <img src={image2} alt="Descripción de la imagen 2" className={style.articleImage}/>
                 <h3 className={style.articleTitle}>Movilidad Articular</h3>
                 <p className={style.articleDescription}>
@@ -46,7 +46,7 @@ function Blog() {
                   {truncateText("Las necesidades de agua van a depender de lo que perdamos en la orina, la defecación, la respiración y la evapotranspiracion. Esta perdida podra ser", 22)}
                 </p>
                 <a href="entrenamiento-isometrico" className={style.readMoreButton}>Seguir leyendo</a>
-              </div>
+              </div>*/}
             </div>
 
           </div>

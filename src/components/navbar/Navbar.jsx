@@ -116,19 +116,6 @@ function Navbar() {
               <li>
                 <Link
                   onClick={toggleSidebar}
-                  to="about"
-                  smooth={true}
-                  duration={500}
-                  offset={-70}
-                  spy={true}
-                  exact="true"
-                >
-                  <FaUser /> Sobre Mí
-                </Link>
-              </li>
-              <li>
-                <Link
-                  onClick={toggleSidebar}
                   to="blog"
                   smooth={true}
                   duration={500}
@@ -139,6 +126,20 @@ function Navbar() {
                   <FaFileAlt /> Blog
                 </Link>
               </li>
+              <li>
+                <Link
+                  onClick={toggleSidebar}
+                  to="about"
+                  smooth={true}
+                  duration={500}
+                  offset={-70}
+                  spy={true}
+                  exact="true"
+                >
+                  <FaUser /> Sobre Mí
+                </Link>
+              </li>
+         
              
             </ul>
           </div>

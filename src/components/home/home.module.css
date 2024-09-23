@@ -204,16 +204,22 @@ h2{
 }
 
 .moreInfoLink {
-  color: #b81b1b;
-  text-decoration: none;
-  font-size: 1.25rem;
-  font-weight: 600;
-  margin-bottom: 100px;
+  background-color: #fff; /* Fondo blanco */
+  color: #d90429; /* Color de texto rojo */
+  border: 2px solid #d90429; /* Borde rojo */
+  border-radius: 5px; /* Esquinas redondeadas */
+  padding: 10px 20px; /* Espaciado interno */
+  font-size: 16px; /* Tamaño de fuente */
+  font-weight: bold; /* Negrita en el texto */
+  cursor: pointer; /* Cambia el cursor al pasar por el botón */
+  transition: all 0.3s ease; /* Suaviza la transición */
 }
 
 .moreInfoLink:hover {
-  color: #e47877;
+  background-color: #d90429; /* Fondo rojo al hacer hover */
+  color: #fff; /* Texto blanco al hacer hover */
 }
+
 
 .blackBlock {
   display: flex;
@@ -319,12 +325,13 @@ footer {
     margin: 0; /* Eliminar márgenes para ocupar todo el ancho */
   }
 .leftBlock{
-  order:2;
+  order:1;
   flex-direction: column;
 
 }
+
   .rightBlock {
-    order: 1; /* Colocar las tarjetas después del bloque izquierdo */
+    order: 3; /* Colocar las tarjetas después del bloque izquierdo */
     flex-direction: column;
 
     align-items: center;

@@ -29,6 +29,10 @@ const Card = ({ title, text, image, transparent, url }) => {
       window.location.href = url;
     }
   };
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
 
   return (
     <div
@@ -154,28 +158,30 @@ function Education() {
   };
   const cardsData = [
     {
-      title: 'Te gustaría sentirte más enérgico y estar en forma',
+      title: 'Te gustaría mejorar tu rendimiento deportivo.',
       text: (
         <span>
-          Mantenerte en <strong>forma</strong> no solo te permite rendir al máximo en cualquier momento. La <strong>actividad física</strong> también tiene un gran impacto positivo en tu estado de ánimo.
+        Ya sea aumentando tu <strong>masa muscular</strong>, reduciendo <strong>grasa corporal</strong>, o ambas…
+Incorpora nuevos <strong>hábitos</strong> a tu rutina diaria y mejora lo que ves en el espejo. 
+
         </span>
       ),
       image: card1,
     },
     {
-      title: 'Queres verte mejor físicamente en el espejo',
+      title: 'Buscas mejorar tu salud y prevenir enfermedades.',
       text: (
         <span>
-          Ya sea aumentando tu <strong>masa muscular</strong> o reduciendo <strong>grasa</strong>... Sentirte satisfecho con lo que ves en el espejo es una fuente importante de <strong>confianza diaria</strong>.
+          El <strong>sedentarismo</strong> es el factor común a un número infinito de <strong>patologías</strong>, incorpora el ejercicio con un programa progresivo de <strong>reacondicionamiento físico</strong>. 
         </span>
       ),
       image: card2,
     },
     {
-      title: 'Buscas maximizar tu esfuerzo y obtener resultados',
+      title: 'Queres mejorar tu estética corporal.',
       text: (
         <span>
-          Puede ser muy <strong>desalentador</strong> invertir esfuerzo <strong>sin ver resultados</strong>. Mi trabajo como profesional del entrenamiento es optimizar al máximo tu proceso y lograr el mayor <strong>progreso posible</strong>.
+          Ya sea aumentando tu <strong>masa muscular</strong> o reduciendo <strong>grasa</strong>... Sentirte satisfecho con lo que ves en el espejo es una fuente importante de <strong>confianza diaria</strong>.
         </span>
       ),
       image: card3,
@@ -245,8 +251,8 @@ function Education() {
       answer: 'No necesitas equipo especial para comenzar. Sin embargo, tener acceso a algunos equipos básicos como pesas o bandas de resistencia puede ser beneficioso para tu progreso.',
     },
     {
-      question: '¿Qué métodos de pago aceptas para el servicio de entrenamiento?',
-      answer: 'Para el servicio de entrenamiento, acepto tarjetas de crédito y débito como Visa y MasterCard. También puedes realizar transferencias bancarias directamente a mi cuenta, utilizar Mercado Pago para pagos en línea. Además, para clientes locales en sesiones presenciales, acepto pagos en efectivo.',
+      question: '¿Qué métodos de pago aceptas para el servicio',
+      answer: 'Para el servicio , acepto Mercado Pago para pagos en línea. Además, para clientes locales en sesiones presenciales, acepto pagos en efectivo.',
     },
   ];
 
@@ -282,7 +288,7 @@ function Education() {
 
         <div className={style.greyBlock}>
           <div className={style.leftBlock}>
-            <h2>¡Da el primer paso hacia tu cambio físico!</h2>
+            <h2>¿Qué esperas para empezar?</h2>
             <img src={fondoPerfil} alt="fondo-perfil" className={style.fotoPerfil} />
           </div>
           <div className={style.rightBlock}>
@@ -298,7 +304,8 @@ function Education() {
         </div>
 
         <div className={style.subtitle8}>
-          <h2>¿Cómo comienza el servicio de <strong>entrenamiento online?</strong></h2>
+          <h2>¿Cómo comienza el <strong>servicio</strong>?</h2>
+          
         </div>
 
         

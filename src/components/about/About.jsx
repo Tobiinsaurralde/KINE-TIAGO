@@ -61,119 +61,86 @@ function About() {
               className={style.fotoPerfil}
             />
             <p className={style.descripcion1}>
-              <strong>Licenciado en Kinesiología y Fisiatría</strong> graduado en
-              <strong>UNNE</strong> (Universidad Nacional del Nordeste)
-              <br />
-              <strong>Preparador Físico</strong> Certificado por la Escuela de
-              Formación en Fitness (E.F.F.I.)
+              Mi nombre es Tiago sin H (léase hache), pueden llamarme por mi nombre o decirme “kine”. Soy kinesiólogo y preparador físico, argentino y apasionado por el deporte y la salud. Mi objetivo con esta página es poder llegar a personas de todas partes del mundo, y ofrecer mis servicios para que, JUNTOS, logremos objetivos que puedan generar un cambio en tu vida. A continuación te dejo más información acerca de mi perfil profesional…
             </p>
             <h3 className={style.formacionExperiencia}>
               Formación y experiencia:
             </h3>
             <p className={style.descripcion}>
-  Tengo una sólida formación como{" "}
-  <strong>Licenciado en Kinesiología y Fisiatría</strong>, he tenido la
-  oportunidad de ganar experiencia práctica a través de diversas
-  actividades y prácticas pre-profesionales durante mis años de
-  estudio. Estas experiencias me han permitido aplicar mis
-  conocimientos teóricos en situaciones reales, desarrollando{" "}
-  <strong>habilidades clave</strong> y afianzando mi vocación.
-  <br />
-  <br />
-  Trabajo en el sector de la salud, específicamente en la{" "}
-  <strong>rehabilitación deportiva</strong> y el{" "}
-  <strong>reacondicionamiento físico</strong>. Mis principales{" "}
-  <strong>aptitudes</strong> incluyen:
-  <br />
-  <br />
-</p>
-<ul className={style.aptitudes}>
-  <li>
-    <strong>• Planificación de Tratamientos</strong>: Diseño y
-    desarrollo de planes de tratamiento personalizados y
-    progresivos, adaptados a las necesidades y objetivos específicos
-    de cada paciente.
-  </li>
-  <li>
-    <strong>• Trabajo de Cualidades Físicas</strong>: Fomento de
-    diversas cualidades físicas mediante programas integrales que
-    consideran tanto la rehabilitación como el entrenamiento.
-  </li>
-  <li>
-    <strong>• Atención y Trato al Paciente</strong>: Enfoque
-    centrado en el paciente, garantizando una atención de calidad,
-    inclusión en grupos terapéuticos y educación constante.
-  </li>
-  <li>
-    <strong>• Preparación Física</strong>: Certificado por la Escuela
-    de Formación en Fitness (E.F.F.I.), aporto conocimientos
-    especializados en preparación física y entrenamiento deportivo.
-  </li>
-</ul>
-<br />
-Estoy motivado por el deseo de mejorar la{" "}
-<strong>calidad de vida</strong> y el rendimiento de mis pacientes. Me
-apasiona buscar <strong>herramientas</strong> y{" "}
-<strong>técnicas innovadoras</strong> para cada situación, siempre con
-el objetivo de proporcionar el mejor cuidado posible.
-
+              Tengo una sólida formación como <strong>Licenciado en Kinesiología y Fisiatría</strong>, tuve la oportunidad de ganar experiencia práctica a través de diversas actividades pre-profesionales durante mis años de estudio, dichas experiencias incluyen prácticas en áreas de cuidados intensivos, traumatología, neurología, y deporte. Estas experiencias me han permitido aplicar mis conocimientos teóricos en situaciones reales, desarrollar <strong>habilidades clave</strong> y afianzar mi vocación.             Actualmente, trabajo en el sector de la salud, específicamente en la <strong>rehabilitación deportiva</strong> y el <strong>reacondicionamiento físico</strong>. Mis principales <strong>aptitudes</strong> incluyen:
+             
+            </p>
+            <ul className={style.aptitudes}>
+              <li>
+                <strong>• Planificación de Tratamientos</strong>: Diseño y desarrollo de planes de tratamiento personalizados y progresivos, adaptados a las necesidades y objetivos específicos de cada persona.
+              </li>
+              <li>
+                <strong>• Trabajo de Cualidades Físicas</strong>: Mediante programas integrales que consideran tanto la rehabilitación como el entrenamiento.
+              </li>
+              <li>
+                <strong>• Atención y Trato al Paciente</strong>: Enfoque centrado en el paciente, garantizando una atención de calidad, inclusión en grupos terapéuticos y educación constante.
+              </li>
+              <li>
+                <strong>• Preparación Física</strong>: Certificado por la Escuela de Formación en Fitness (EFFI), brindo conocimientos especializados en preparación física y entrenamiento deportivo.
+              </li>
+            </ul>
+            <br />
+            Estoy motivado por el deseo de mejorar la <strong>calidad de vida</strong> y el rendimiento de mis pacientes. Me apasiona buscar <strong>herramientas</strong> y <strong>técnicas innovadoras</strong> para cada situación, siempre con el objetivo de proporcionar el mejor cuidado posible.
           </div>
         </div>
-
+  
         {/* Formulario de Contacto añadido a la sección About */}
-        <section className={style.contact}id="contact" >
+        <section className={style.contact} id="contact">
           <div className={style.father}>
             <div className={style.subtitle}>
               <h2>Contáctame</h2>
               <img src={linearoja} className={style.linearoja} alt="Línea roja" />
-           
             </div>
             <div className={style.contenedor}>
               <div className={style.contactInfo}>
-              <div className={style.contactos}>
-  <ul className={style.contactList}>
-    <li>
-      <BiLogoGmail className={style.iconContact} />
-      <a href="mailto:kinetiagoinsa@gmail.com">kinetiagoinsa@gmail.com</a>
-    </li>
-    <li>
-      <FaLocationDot className={style.iconContact} />
-      <a
-        href="https://www.google.com/maps/place/Corrientes/@-27.4860751,-58.8747897,12z/data=!3m1!4b1!4m6!3m5!1s0x94456b79d5bed36b:0xfa999f1ef3b40646!8m2!3d-27.4692131!4d-58.8306349!16zL20vMDJ0Ymo1?entry=ttu"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Ciudad, País.
-      </a>
-    </li>
-    <li>
-      <FaLinkedin className={style.iconContact} />
-      <a
-        href="https://www.linkedin.com/in/tiago-insaurralde-a4b328211/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        /Tiagoinsaurralde
-      </a>
-    </li>
-    <li>
-      <FaInstagram className={style.iconContact} />
-      <a
-        href="https://www.instagram.com/kinetiago"
-        target="_blank"
-        rel="noopener noreferrer"
-        className={style.iconsRed}
-      >
-        /@kinetiago
-      </a>
-    </li>
-  </ul>
-</div>
-
-
-                  
+                <div className={style.contactos}>
+                  <ul className={style.contactList}>
+                    <li>
+                      <BiLogoGmail className={style.iconContact} />
+                      <a href="mailto:kinetiagoinsa@gmail.com">
+                        kinetiagoinsa@gmail.com
+                      </a>
+                    </li>
+                    <li>
+                      <FaLocationDot className={style.iconContact} />
+                      <a
+                        href="https://www.google.com/maps/place/Corrientes/@-27.4860751,-58.8747897,12z/data=!3m1!4b1!4m6!3m5!1s0x94456b79d5bed36b:0xfa999f1ef3b40646!8m2!3d-27.4692131!4d-58.8306349!16zL20vMDJ0Ymo1?entry=ttu"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Ciudad, País.
+                      </a>
+                    </li>
+                    <li>
+                      <FaLinkedin className={style.iconContact} />
+                      <a
+                        href="https://www.linkedin.com/in/tiago-insaurralde-a4b328211/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        /Tiagoinsaurralde
+                      </a>
+                    </li>
+                    <li>
+                      <FaInstagram className={style.iconContact} />
+                      <a
+                        href="https://www.instagram.com/kinetiago"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={style.iconsRed}
+                      >
+                        /@kinetiago
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </div>
-              <div className={style.formContainer} >
+              <div className={style.formContainer}>
                 <form ref={form} onSubmit={sendEmail} className={style.form}>
                   <input
                     type="text"
@@ -194,7 +161,7 @@ el objetivo de proporcionar el mejor cuidado posible.
             </div>
           </div>
         </section>
-
+  
         <div className={style.tobi}>
           <li>
             <p>© 2024 Tobias Insaurralde - Todos los derechos reservados</p>
@@ -204,5 +171,5 @@ el objetivo de proporcionar el mejor cuidado posible.
     </div>
   );
 }
-
-export default About;
+  export default About;
+  

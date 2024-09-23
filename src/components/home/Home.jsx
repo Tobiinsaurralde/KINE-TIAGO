@@ -35,16 +35,11 @@ const Home = () => {
   const location = useLocation();
   const [isDarkMode, setIsDarkMode] = useState(false);
 
-  useEffect(() => {
-    if (location.pathname === '/entrenador-online/') {
-      window.scrollTo(0, 0);
-    }
-  }, [location.pathname]);
-
   const handleButtonClick = () => {
-    navigate('/entrenador-online/');
+    navigate('entrenador-online');
+    window.scrollTo(0, 0); // Desplaza al borde superior de la página
   };
-
+  
   useEffect(() => {
     const savedTheme = localStorage.getItem("theme") || "light-mode";
     document.body.classList.add(savedTheme);
@@ -75,11 +70,13 @@ const Home = () => {
           <div className={style.leftBlock}>
             <img src={fondoPerfil} alt="fondo-perfil" className={style.fotoPerfil} />
             <h2> Klgo. Tiago Insaurralde</h2>
-            <p className={style.listItem1}>Lic. en Kinesiología y Fisiatría Graduado en Universidad Nacional del Nordeste</p>
-            <p className={style.listItem2}>Preparador Físico Certificado</p>
+            <p className={style.listItem1}>- Lic. en Kinesiología y Fisiatría Graduado en Universidad Nacional del Nordeste</p>
+            <p className={style.listItem2}>- Preparador Físico Certificado</p>
+
           </div>
 
           <div className={style.rightBlock}>
+
           <TwoCardBlock
               Icon={IoFitness}
               title="Rehabilitación "
@@ -99,10 +96,11 @@ const Home = () => {
           <h2>¡Descubre mi servicio de <span className={style.boldText}>entrenamiento y rehabilitación online!</span></h2>
         </div>
         <p>
-          <button onClick={handleButtonClick} className={style.moreInfoLink}>
-            ¡Haz click para más información!
-          </button>
-        </p>
+  <button onClick={handleButtonClick} className={style.moreInfoLink}>
+    ¡Haz click para más información!
+  </button>
+</p>
+
         <div className={style.blackBlock}>
           <div className={style.services}>
             <h3>Servicios:</h3>

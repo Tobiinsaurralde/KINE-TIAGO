@@ -11,8 +11,9 @@ html, body {
 
 /* About Section */
 .about {
+  height: 100%;
   background-color: #f7f7f7; /* Fondo suave */
-  padding: 60px 20px;
+  padding: 100px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -30,7 +31,6 @@ html, body {
   overflow: hidden;
   max-width: 1200px;
   width: 100%;
-  margin: 0 20px;
   padding: 40px;
 }
 
@@ -48,7 +48,7 @@ html, body {
 .nombre {
   margin-top: -25px;
   font-size: 3.1rem;
-  color: #be1515;
+  color: #e34f4f;
   font-weight: 800;
   margin-bottom: 30px;
 }
@@ -187,24 +187,32 @@ html, body {
   margin-right: -30px;
 }
 
-/* Responsive Styles */
-@media screen and (max-width: 1024px) {
-  .articlesContainer {
-    flex-direction: column;
-  }
-
-  .article {
-    margin-bottom: 40px;
-
-  }
-}
 @media screen and (max-width: 767px) {
+  .about{
+    height: 100%;
+  }
   .containerAbout {  
     max-width: 100%; 
     padding: 20px;
+    height: 100%;
     margin-top: 40px;
   }
-
+  .articleTitle{
+    font-size: 25px;
+    font-weight: 600;
+  }
+  .articleDescription {
+    margin-top: 10px;
+    font-size: 20px;
+    position: relative;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Número de líneas visibles */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis; /* Agrega los puntos suspensivos */
+    color: #555;
+  }
+  
   .profileSection {
     flex-direction: column;
     align-items: center;
@@ -215,4 +223,5 @@ html, body {
     margin-right: 0;
     margin-bottom: 20px;
   }
+
 }

@@ -36,16 +36,14 @@ const Home = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
   const handleButtonClick = () => {
-    navigate('entrenador-online');
-    window.scrollTo(0, 0); // Desplaza al borde superior de la página
+    navigate('/entrenador-online');
+    setTimeout(() => {
+      window.scrollTo(0, 0); // Desplaza al borde superior de la página después de navegar
+    }, 100); // Añade un pequeño retraso para asegurar que la navegación ocurra antes de desplazarse
   };
   
-  useEffect(() => {
-    const savedTheme = localStorage.getItem("theme") || "light-mode";
-    document.body.classList.add(savedTheme);
-    setIsDarkMode(savedTheme === "dark-mode");
-  }, []);
-
+  
+  
   return (
     <section className={style.education} id="education">
       <div className={style.divLogo}>
@@ -64,7 +62,7 @@ const Home = () => {
             <img src={linearoja} className={style.linearoja} />
           </div>
         </div>
-        <span className={style.tecnico2}> SERVICIOS:</span>
+          <span className={style.tecnico2}> SERVICIOS:</span>
 
         <div className={style.greyBlock}>
           <div className={style.leftBlock}>
@@ -96,17 +94,17 @@ const Home = () => {
           <h2>¡Descubre mi servicio de <span className={style.boldText}>entrenamiento y rehabilitación online!</span></h2>
         </div>
         <p>
-  <button onClick={handleButtonClick} className={style.moreInfoLink}>
-    ¡Haz click para más información!
-  </button>
+        <a href="/entrenador-online" className={style.moreInfoLink}>¡Haz click para mas información!</a>
+
 </p>
 
         <div className={style.blackBlock}>
           <div className={style.services}>
             <h3>Servicios:</h3>
             <ul>
-              <li><Link to="/entrenador-online">Entrenamiento</Link></li>
-              <li><Link to="/entrenador-online">Rehabilitación</Link></li>
+            <a href="/entrenador-online" >Entrenamiento</a>
+            <br></br>
+            <a href="/entrenador-online" >Rehabilitación</a>
             </ul>
           </div>
           <img src={logo} alt="logo" className={style.logo} />

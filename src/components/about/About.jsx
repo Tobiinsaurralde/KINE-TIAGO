@@ -113,7 +113,7 @@ function About() {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        Ciudad, País.
+                         Corrientes, Argentina.
                       </a>
                     </li>
                     <li>

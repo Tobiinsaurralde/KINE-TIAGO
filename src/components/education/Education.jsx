@@ -334,8 +334,9 @@ Incorpora nuevos <strong>hábitos</strong> a tu rutina diaria y mejora lo que ve
           <div className={style.services}>
           <h3>Servicios:</h3>
             <ul>
-              <li><Link to="/entrenador-online">Entrenamiento</Link></li>
-              <li><Link to="/entrenador-online">Rehabilitación</Link></li>
+            <a href="/entrenador-online" >Entrenamiento</a>
+            <br></br>
+            <a href="/entrenador-online" >Rehabilitación</a>
             </ul>
           </div>
           <img src={logo} alt="logo" className={style.logo} />

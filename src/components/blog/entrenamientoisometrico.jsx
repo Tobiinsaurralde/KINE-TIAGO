@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
 import style from "./entrenamientoisometrico.module.css";
 import image1 from "../../assets/image1.jpg";
-import logo from "../../assets/logo.png";
-import arrow from "../../assets/arrow.png";
+
 
 function About() {
   const [isDarkMode, setIsDarkMode] = useState(false);

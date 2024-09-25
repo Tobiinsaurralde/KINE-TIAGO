@@ -344,7 +344,7 @@ Incorpora nuevos <strong>hábitos</strong> a tu rutina diaria y mejora lo que ve
           <div className={style.aboutMe}>
             <h3>Sobre mí</h3>
             <ul>
-              <li><Link to="/about">Tiago Insaurralde</Link></li>
+            <a href="/about" >Tiago Insaurralde</a>
               <li>Redes sociales:</li>
               <li><a href="https://www.instagram.com/kinetiago" target="_blank" rel="noopener noreferrer">Instagram</a></li>
               <li><a href="https://www.linkedin.com/in/tiago-insaurralde-a4b328211/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>

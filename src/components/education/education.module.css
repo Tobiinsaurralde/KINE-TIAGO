@@ -713,7 +713,7 @@ margin-right: 90px;
   }
 
   .cardIcon {
-    font-size: 4rem; /* Reduce el tamaño del ícono */
+    font-size: 2rem; /* Reduce el tamaño del ícono */
   }
 
   .leftBlock, .rightBlock {

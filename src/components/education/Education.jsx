@@ -298,7 +298,7 @@ Incorpora nuevos <strong>hábitos</strong> a tu rutina diaria y mejora lo que ve
   url1="https://api.whatsapp.com/send?phone=543794277815" // Reemplaza con tu URL de WhatsApp
   title2="¡Reserva una videollamada conmigo!"
   text2="Elige entre los días y horas disponibles para hablar conmigo acerca del servicio"
-  url2="https://calendly.com/kinetiagoinsa" // Reemplaza con tu URL de llamada telefónica
+  url2="https://calendly.com/kinetiagoinsa/30min" // Reemplaza con tu URL de llamada telefónica
 />
           </div>
         </div>
